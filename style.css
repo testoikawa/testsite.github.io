@@ -132,7 +132,7 @@ body{font-family: 'MonteCarlo', cursive;
 
 body{
     background:rgba(116,117,85,1);
-    background-image : url(img/jochicajel_back.png);
+    background-image: url(img/jochicajel_back.png);
 }
 .movie_part{
     display:grid;
