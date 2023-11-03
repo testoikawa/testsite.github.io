@@ -1,0 +1,349 @@
+/*a{text-decoration: none;}*/
+/*これでaタグに装飾を付けない（リンクのアンダーラインとか）*/
+
+img{max-width:100%;} /*これで画像の大きさを親要素より大きくなることを防ぐ*/
+
+li{
+    list-style: none;
+    text-decoration: none;
+}
+body{font-family: 'MonteCarlo', cursive;
+    font-family: 'Noto Serif JP', serif;
+    font-family:  '游明朝','Yu Mincho','Hiragino Mincho Pro',serif;}
+
+/*以上が共通要素*/
+
+/*スマホ対応*/
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+}
+/*スマホ・タブレット対応*/
+
+＠media(max-width:600px){
+    /*#000000.wrapper,
+    #00000 .wrapper*/
+    .copy{
+        flex-direction:column;
+    }
+    .copy{
+        width:100%;
+    }
+    .000{
+        margin-bottom:30px;
+    }
+
+}
+
+
+*{ margin: 0px;}
+
+
+.header_top{
+    background-image: url(img/tolso.jpg);
+    background-size:cover;
+    /*containは縦横比を保持して画像が全て表示される指定*/
+    background-repeat: no-repeat;
+    height:650px;
+    width:100%;
+}
+
+.header_navi{
+    height: 50px;
+    width:100%;
+    /*背景をrgbaで指定すると半透明になる。aはアルファで１-0.1を入れられる;*/
+    background:#f4eeee;
+    text-align: center;
+    /*これでリストを横並び＿これで両端設定*/
+}
+
+.navi_menu{
+    display:flex;
+    justify-content: center;
+    color:#414141;
+}
+
+/*リンク訪問済みの色を変えない*/
+.a_navi_menu{color:#414141;}
+.a_navi_menu:visited{color:#414141;}
+
+.navi_menu li{
+    padding:10px;
+    font-size: 16px;
+    font-family: YuGothic;
+}
+
+.navi_menu a{
+    text-decoration: none;
+}
+
+/*問い合わせ*/
+.button_toiawase{
+    background-color: #B5943E;
+    border-radius: 10px;
+    padding:8px;
+    color:#fff
+}
+
+.mainlogo{
+    width: 450px;
+}
+
+.copy{
+    text-align:center;
+    color:#FFF;
+    width:1000px;
+    margin:59px auto 0 auto;/*ヘッダーのコピーをセンタリング*/
+    line-height: 250%;
+}
+
+.main_copy{
+    color: #fff;
+    font-family: YuMincho;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 166.667% */
+    letter-spacing: 4.8px;
+    margin-top: 31px;
+    margin-bottom: 20px;
+}
+
+.main_subcopy{
+    font-family: YuMincho;
+    font-size: 18px;
+    font-style: none;
+    font-weight: 400;
+    line-height: 35px; /* 166.667% */
+    letter-spacing: 3px;
+    margin-bottom: 31px;
+}
+.button_toiawase2{
+    background-color: #fff;
+    font-family: Yugothic;
+    font-size: 16px;
+    border-radius: 10px;
+    padding:8px 24px;
+    color: #B5943E;
+    text-decoration-line: none;
+}
+
+body{
+    background:rgba(116,117,85,1);
+    background-image : url(jochicajel_back.png);
+}
+.movie_part{
+    display:grid;
+    grid-template-columns: 50px 50px 350px 50px 50px;
+    gap: 100px;
+    justify-content:center;
+    align-items: center;
+    font-size: 20px;
+    color:DCCFAD;
+    letter-spacing:15px;
+    margin:100px 0 100px 0px;
+}
+/*縦書き*/
+
+.movie_copy{
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+}
+.movie_copy02{
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    align-items: start;
+}
+
+.movie{
+    width: 321px;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/*飛ぶボタン*/
+.testrow01{
+    display:grid;
+    grid-template-columns: 271px 271px 271px;
+    gap:96px;
+    place-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    color: #FFF;
+    text-align: center;
+    font-family: YuGothic;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px; /* 166.667% */
+    letter-spacing: 3px;
+}
+.testrow02{
+    display:grid;
+    grid-template-columns: 271px 271px;
+    gap:96px;
+    place-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    color: #FFF;
+    text-align: justify;
+    font-family: YuGothic;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px; /* 166.667% */
+    letter-spacing: 3px;
+}
+
+.cur_link_btn {
+    margin: 10px 0;
+}
+
+.cur_link_btn:hover {
+        filter: brightness(0.5);
+    }
+
+/*footer------------------------------------*/    
+footer{
+    height: *;
+    width:100%;
+    background:rgba(116,117,85,1);
+    padding:30px;
+    display:flex;
+    /*これでリストを横並び*/
+    justify-content: space-between;
+    /*これで両端設定*/
+}
+
+.navi2{
+    display:flex;
+}
+
+.footer_navi{
+    margin-left:10px;
+}
+
+.footertext_big{
+    margin-bottom :30px;
+}
+
+.footertext_big a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: YuGothic;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 214.286% */
+    letter-spacing: 2.8px;
+}
+
+.footertext_small a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: YuGothic;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 250% */
+    letter-spacing: 2.4px;
+}
+/*footer------------------------------------*/    
+
+/*curページ*/
+.sub_body{
+    background:#35322C;
+    color:#fff;
+    display: flex;
+    flex-wrap:wrap;
+}
+.subpage_title{
+    align-items: center;
+}
+.subpage_title_eng{
+    color:#B5943E;
+    text-align: center;
+    font-family: MonteCarlo;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 200;
+    margin-top: 100px;
+
+}
+.subpage_title{
+    color: #B5943E;
+    text-align: center;
+    font-family: YuMincho;
+    font-size: 25.36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 75px;
+    letter-spacing: 5.072px;
+}
+.subpage_title_catch{
+    color: #B5943E;
+    text-align: center;
+    font-family: YuMincho;
+    font-size: 25.36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 75px;
+    letter-spacing: 5.072px;   
+}
+
+.sub_main{
+    width: 1000px;
+    margin:auto;
+    padding-top: 100px;
+    margin-bottom: 50px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.flexcontainer01{
+    display:flex;
+    width:100%;
+    justify-content: space-evenly;
+    padding:0px 0px 5px 0px;
+    column-gap: 10px;
+}
+
+.title_with_line{
+    border-left: inset 5px  #B5943E;
+        }
+        
+/*テーブル*/
+table,td {
+  border: 1px solid #fff;
+  text-align: center;
+  padding:10px;
+}
+
+thead,
+tfoot {
+  background-color: #333;
+  color: #fff;
+}
+
+.ryokin_photo{
+
+}
+.cur_hyou{
+    list-style-type:decimal;
+}
+.flexcontainer02{
+        display:flex;
+        width:100%;
+        padding:0px;
+        padding-bottom: 50px;
+}
+    
+.flexitem01,.flexitem02,.flexitem03,.flexitem04,.flexitem05{
+        flex:auto;/*これが幅にくっつく設定*/
+        list-style: none;
+        padding:0px;
+    }
