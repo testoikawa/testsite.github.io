@@ -50,6 +50,7 @@ body{font-family: 'MonteCarlo', cursive;
     display:flex;
     justify-content: center;
     color:#414141;
+    font-family: YuGothic,gothic;
 }
 
 /*リンク訪問済みの色を変えない*/
@@ -218,22 +219,12 @@ body{
 /*footer------------------------------------*/    
 footer{
     height: *;
-    width:100%;
+    width:100vw;
     background:rgba(116,117,85,1);
-    padding:30px;
+    padding:40px 40px 40px 40px;
     display:flex;
     flex-wrap: wrap;
-    /*これでリストを横並び*/
     justify-content: space-between;
-    /*これで両端設定*/
-}
-
-.navi2{
-    display:flex;
-}
-
-.footer_navi{
-    margin-left:10px;
 }
 
 .footertext_big{
@@ -243,7 +234,7 @@ footer{
 .footertext_big a{
     text-decoration: none;
     color: #FFF;
-    font-family: YuGothic;
+    font-family: YuGothic,gothic;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -254,13 +245,14 @@ footer{
 .footertext_small a{
     text-decoration: none;
     color: #FFF;
-    font-family: YuGothic;
+    font-family: YuGothic,gothic;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: 30px; /* 250% */
     letter-spacing: 2.4px;
 }
+
 /*footer------------------------------------*/    
 
 /*curページ*/
