@@ -22,32 +22,19 @@ body{font-family: 'MonteCarlo', cursive;
 }
 /*スマホ・タブレット対応*/
 
-＠media(max-width:480px){
-    /*#000000.wrapper,
-    #00000 .wrapper*/
-    .**0*{
-        flex-direction:column;
-    }
-    .**0*{
-        width:100%;
-    }
-    .000{
-        margin-bottom:30px;
-    }
-
-}
-
-
 *{ margin: 0px;}
 
-
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+}
 .header_top{
     background-image: url(img/tolso.jpg);
     background-size:cover;
     /*containは縦横比を保持して画像が全て表示される指定*/
     background-repeat: no-repeat;
-    height:650px;
-    width:100%;
+    background-position: center;
+    height:auto;
+    width:100vw;
 }
 
 .header_navi{
@@ -92,31 +79,34 @@ body{font-family: 'MonteCarlo', cursive;
 }
 
 @media (max-width: 480px) {
+    /*header部分*/
+    .header_copy{
+        padding:0 20px 0 20px;
+    }
 	.mainlogo{
-        width: 50px;
+        width: 300px;
     }
-    .copy{
-        width:460px;
-        margin:0 auto 0 auto;
-    }
+    
     .main_copy{
         font-size:20px;
     }
     .main_subcopy{
         font-size:14px;
     }
+    /*movie部分*/
 }
 
-.copy{
+.header_copy{
+    display:grid;
+    flex-wrap: wrap;
     text-align:center;
+    justify-content: center;
     color:#FFF;
-    width:1000px;
     margin:59px auto 0 auto;/*ヘッダーのコピーをセンタリング*/
     line-height: 250%;
 }
 
 .main_copy{
-    color: #fff;
     font-family: YuMincho;
     font-size: 24px;
     font-style: normal;
@@ -141,9 +131,10 @@ body{font-family: 'MonteCarlo', cursive;
     font-family: Yugothic;
     font-size: 16px;
     border-radius: 10px;
-    padding:8px 24px;
+    width:260px;
     color: #B5943E;
     text-decoration-line: none;
+    margin:0 auto 50px auto;
 }
 
 body{
@@ -157,6 +148,7 @@ body{
     justify-content:center;
     align-items: center;
     font-size: 20px;
+    padding:4px 4px;
     color:DCCFAD;
     letter-spacing:15px;
     margin:100px 0 100px 0px;
@@ -230,6 +222,7 @@ footer{
     background:rgba(116,117,85,1);
     padding:30px;
     display:flex;
+    flex-wrap: wrap;
     /*これでリストを横並び*/
     justify-content: space-between;
     /*これで両端設定*/
