@@ -3,20 +3,15 @@
     <!--google検索除外タグ・アップ後トル-->
     <meta name="robots" content="noindex">
     <meta charset="UTF-8">
-    <link href="style.css" rel="stylesheet" href="style.css">
+    <!--ブラウザのデフォルトcssをリセット-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Noto+Serif+JP&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <!--リスポンシブ対応用-->
 </head>
-
-
-
-
-
-
-
 
 
 
@@ -50,12 +45,13 @@
 <body class="body_home">
 <main>
     <section class="movie_part">
-        <div class="movie_copy">&emsp;&emsp; すべて学べます</div>
+        <div class="movie_copy01">すべて学べます</div>
         <div class="movie_copy02">立体裁断の技術が</div>
            <div><img class="movie" src="img/2023movie.gif"></div>
-        <div class="movie_copy">&emsp;&emsp;形にすることができる</div>
+        <div class="movie_copy01">&emsp;&emsp;形にすることができる</div>
         <div class="movie_copy02">どんなデザインの服も</div>
     </section>
+
     
     <div class="testrow01">
         <figure>
@@ -70,13 +66,11 @@
             <a href="#"><img class="cur_link_btn" src="img/profile_btn.png" alt="jochicajelの講師紹介"></a>
             <figcaption class="top_figcaption">講師の鳴海恵美子の<br>プロフィール</figcaption>
         </figure>
-    </div>
-    <div class="testrow02">
-        <figure>
+        <figure class="btn_2row">
             <a href="#"><img class="cur_link_btn" src="img/order_btn.png" alt="jochicajelのオーダー作品"></a>
             <figcaption class="top_figcaption">講師がデザインから裁縫まで承ったオーダー作品をエピソードを交えてご紹介します</figcaption>
         </figure>
-        <figure>
+        <figure class="btn_2row">
             <a href="#"><img class="cur_link_btn" src="img/studentswork_btn.png" alt="jochicajelの生徒さんの作品"></a>
             <figcaption class="top_figcaption">初心者だった生徒さんの成長が見られる作品制作の過程をご紹介します</figcaption>
         </figure>
@@ -85,6 +79,9 @@
     </section>
 </main>
 </body>
+
+
+
 
 <footer>
     <div class="footer_navi">
@@ -101,7 +98,8 @@
         </ul>
     </div>
     <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.2171683638257!2d141.33047797620566!3d43.05789989072928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b299421078263%3A0xba243d24ad7eeaf3!2z44ixSk9DSElDQUpFTA!5e0!3m2!1sja!2sjp!4v1697103573387!5m2!1sja!2sjp" width="600" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.2171683638257!2d141.33047797620566!3d43.05789989072928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b299421078263%3A0xba243d24ad7eeaf3!2z44ixSk9DSElDQUpFTA!5e0!3m2!1sja!2sjp!4v1697103573387!5m2!1sja!2sjp" width="600" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+
 </footer>
 </html>
