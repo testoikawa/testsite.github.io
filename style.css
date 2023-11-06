@@ -286,9 +286,8 @@ footer{
         padding: 50px;
     }
     .map{
-        width:100%vw;
+        width:100%;
         position: center;
-        width,height:none;
     }
     .footer_rights{
         padding-bottom:50px;
