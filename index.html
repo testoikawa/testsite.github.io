@@ -14,8 +14,7 @@
 </head>
 
 
-
-<header class="header_top">
+<nav>
     <div class="header_navi">
         <ul class=navi_menu>
             <li><a class="a_navi_menu" href="#">HOME</a></li>
@@ -27,6 +26,21 @@
             <li><a class="button_toiawase" href="#">お問い合わせ・お申し込み</a></li>
         </ul>
     </div>
+    <div class="burger"></div>
+    <div class="menu">
+        <ul class=navi_menu_burger>
+            <li><a class="a_navi_menu" href="#">HOME</a></li>
+            <li><a class="a_navi_menu" href="#">カリキュラム</a></li>
+            <li><a class="a_navi_menu" href="#">ヒストリー</a></li>
+            <li><a class="a_navi_menu" href="#">講師紹介</a></li>
+            <li><a class="a_navi_menu" href="#">オーダー作品</a></li>
+            <li><a class="a_navi_menu" href="#">生徒さんの作品</a></li>
+            <li><a class="button_toiawase" href="#">お問い合わせ・お申し込み</a></li>
+        </ul>
+    </div>
+</nav>
+
+<header class="header_top">
     <div class="header_copy">
         <a href="index.html"><img class="mainlogo" src="img/jochicajel_logo.svg" alt="jochicajelロゴ"></a>
         <h1 class="main_copy">デザインを考え、<br class="br_sp">そのパターンを作り、<br>
@@ -78,6 +92,21 @@
 
     </section>
 </main>
+
+  <!--ハンバーガーメニュ-Jquery-->
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"
+></script>
+<script>
+  $(".burger").click(function () {
+    $(".burger").toggleClass("is-active");
+    $(".menu").toggleClass("is-active");
+  });
+</script>
+<!--ハンバーガーメニュ-Jquery-->
+
 </body>
 
 
