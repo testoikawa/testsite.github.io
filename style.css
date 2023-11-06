@@ -1,4 +1,4 @@
-/*a{text-decoration: none;}*/
+a{text-decoration: none;}
 /*これでaタグに装飾を付けない（リンクのアンダーラインとか）*/
 
 *{ margin: 0px;}
@@ -24,15 +24,21 @@ body{font-family: 'MonteCarlo', cursive;
     background-position: center;
     height:auto;
     width:100vw;
+    margin-top: 0;
+    padding:30px;
 }
 
 .header_navi{
+    display:flex;
+    justify-content: center;
+    text-align: center;
     height: 50px;
     width:100%;
     /*背景をrgbaで指定すると半透明になる。aはアルファで１-0.1を入れられる;*/
-    background:#f4eeee;
+    background:#fff;
     text-align: center;
     /*これでリストを横並び＿これで両端設定*/
+    
 }
 
 .navi_menu{
@@ -65,6 +71,74 @@ body{font-family: 'MonteCarlo', cursive;
     font-family:游ゴシック,YuGothic,sans-serif,gothic;
 }
 
+/*バーガー*++++++++++++++++++++++++++++/
+
+/* バーガー */
+.burger {
+    width: 100vw;
+    height: 50px;
+    background-image:url(img/burger.svg);
+    background-repeat: no-repeat;
+    align-items: end;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    display:none;
+    padding:20px;
+  }
+  .burger:hover {
+    background-color: #ddd;
+  }
+  .burger.is-active {
+    background-image: url(img/close.svg);
+  }
+  @media (max-width: 480px) {
+    .burger {
+      display:block;
+  }
+    .header_navi{
+        display:none;
+    }
+  }
+  
+  /* メニュー */
+  .menu {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    background-color: #f68080;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    display: none;
+    text-align: center;
+    padding:20px;
+    gap:30px;
+    margin-bottom: 10px;
+  }
+  .navi_menu_burger{
+    z-index: 2;
+    color:#fff;
+    gap:15px;
+  }
+  .navi_menu_burger a{
+  text-align: center;
+    color:#fff;
+}
+
+  .navi_menu_burger a{
+    color: #fff;
+  }
+  .menu.is-active {
+    display: flex;
+  }
+
+/*バーガー+++++++++++++++++++++++++++++++++*/
 
 /*メイン要素*/
 .mainlogo{
@@ -77,12 +151,13 @@ body{font-family: 'MonteCarlo', cursive;
     text-align:center;
     justify-content: center;
     color:#FFF;
-    margin:59px auto 0 auto;
+    margin:0px auto 0 auto;
+    padding-top: 59px;
     line-height: 250%;
 }
 
 .main_copy{
-    font-family: YuMincho;
+    font-family: YuMincho,serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -95,7 +170,7 @@ body{font-family: 'MonteCarlo', cursive;
 .br_sp {display: none;}
 
 .main_subcopy{
-    font-family: YuMincho;
+    font-family: YuMincho,serif;
     font-size: 18px;
     font-style: none;
     font-weight: 400;
@@ -205,7 +280,7 @@ body{
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
-    line-height: 25px; /* 166.667% */
+    line-height: 25px;
     letter-spacing: 3px;
     
   }
@@ -290,7 +365,7 @@ footer{
         padding: 50px;
     }
     .map{
-        width:100vw;
+        width:90vw;
         position: center;
     }
     .footer_rights{
