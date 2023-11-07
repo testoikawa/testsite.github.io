@@ -265,7 +265,7 @@ body{
 }
 
 /*飛ぶボタン*/
-.testrow01{
+.btnrow01{
     display:grid;
     grid-template-columns: 271px 271px 271px;
     grid-template-rows: auto;
@@ -289,7 +289,7 @@ body{
   }
   
   @media (max-width: 480px){
-    .testrow01{
+    .btnrow01{
       display:grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
@@ -299,6 +299,7 @@ body{
       .btn_2row{
         position:none;
         left:0%;
+        text-align : justify; 
       }
   
   }
