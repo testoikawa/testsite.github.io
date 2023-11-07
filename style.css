@@ -31,14 +31,12 @@ body{font-family: 'MonteCarlo', cursive;
 .header_navi{
     display:flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     height: 50px;
     width:100%;
-    /*背景をrgbaで指定すると半透明になる。aはアルファで１-0.1を入れられる;*/
     background:#fff;
     text-align: center;
-    /*これでリストを横並び＿これで両端設定*/
-    
+
 }
 
 .navi_menu{
