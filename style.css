@@ -210,6 +210,9 @@ body{font-family: 'MonteCarlo', cursive;
         line-height: 25px;
         letter-spacing: 0px;
     }
+    .br_browser{
+        display:none;
+    }
 }
 
 
