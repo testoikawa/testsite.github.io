@@ -72,6 +72,7 @@ body{font-family: 'MonteCarlo', cursive;
     padding:20px 20px 20px 40px;
     color:#fff;
 }
+いる？？
 .logo_subpage{
     width:274px;
 }
@@ -130,6 +131,7 @@ body{font-family: 'MonteCarlo', cursive;
     display: none;
     text-align: center;
     margin: 0 0 60px 0;
+    color:#fff
 }
   
 .menu.is-active {
@@ -147,7 +149,7 @@ body{font-family: 'MonteCarlo', cursive;
     color:#fff;
     margin:20px;
 }
-.a_navi_menu02{
+.a_navi_menu{
     font-family:游ゴシック,YuGothic,sans-serif,gothic;
     line-height: 40px;
     margin:20px;
@@ -158,20 +160,19 @@ body{font-family: 'MonteCarlo', cursive;
 /*burger_sub*/
 .burger_subpage {
     width: 100vw;
-    height: 50px;
-    background-image:url(img/burger.svg);
+    height: 80px;
+    background-image:url(img/burger.svg),url(img/jochicajel_logo_sub.svg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right,left;
     background-color: #fff;
     cursor: pointer;
     position: relative;
     z-index: 10;
     display:none;
-    padding:20px;
 }
  
 .burger_subpage.is-active {
-    background-image:url(img/close.svg);
+    background-image:url(img/close.svg),url(img/jochicajel_logo_sub.svg);
 }
 
 @media (max-width: 860px) {
@@ -179,6 +180,8 @@ body{font-family: 'MonteCarlo', cursive;
     .menu_subpage{display:block;}
     .header_navi_subpage{ display:none;}
     .button_toiawase{line-height: 60px;}
+    .a_navi_menu:visited{color:#fff;}
+
 }
   
 /*menu sub*/
@@ -213,6 +216,14 @@ body{font-family: 'MonteCarlo', cursive;
     color:#fff;
     margin:20px;
 }
+
+.a_navi_menu02{
+    font-family:游ゴシック,YuGothic,sans-serif,gothic;
+    line-height: 40px;
+    margin:20px;
+}
+
+
 /*サブページバーガー終わり+++++++++++++++++++++++++++++++++*/
 
 
@@ -496,14 +507,8 @@ footer{
     justify-content: center;
 }
 .subpage_title_eng{
-    color:#B5943E;
-    text-align: center;
-    font-family: MonteCarlo;
-    font-size: 100px;
-    font-style: normal;
-    font-weight: 100;
-    margin-top: 150px;
-    margin-bottom: 50px;
+    display:block;
+    margin: 150px auto 45px auto;
 }
 .subpage_title_catch{
     color: #B5943E;
@@ -522,7 +527,25 @@ footer{
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
-    letter-spacing: 8px;   
+    letter-spacing: 8px;
+    line-height: 55px;   
+}
+
+@media (max-width: 480px){
+    .subpage_title_eng{
+        width:250px;
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+    .subpage_title_catch{
+        font-size: 22px;
+        letter-spacing: 6px;
+        margin-bottom: 15px;
+    }
+    .subpage_title_copy{
+        font-size: 28px; 
+        line-height: 40px;
+    }
 }
 
 /*SUB cur meinコンテンツ*/
@@ -607,6 +630,12 @@ p{
     margin-top:20px;
 }
 
+.cur_hyou{
+    list-style-type:decimal;
+    text-indent:0.25em;
+    margin-left:3em;
+}
+
 .cur_hyo_font{
     font-size: 20px;
     color:#B5943E;
@@ -623,6 +652,12 @@ table,td {
   border: 1px solid #fff;
   text-align: center;
   padding:10px;
+  border-collapse: collapse;
+  width:100%;
+  table-layout:fixed;
+}
+.cur_thead{
+    background-color: rgb(37,36,33);
 }
 
 .cur_hyou{
@@ -647,7 +682,7 @@ table,td {
 
 @media (max-width: 480px) {
     .subpage_main{
-        margin:150px 30px 150px 30px;
+        margin:60px 30px 150px 30px;
         padding-top: 0px;
         margin-bottom: 50px;
     }
@@ -661,7 +696,7 @@ table,td {
         gap:25px;
     }
     h2{
-        font-size: 20px;
+        font-size: 22px;
         line-height: 25px; /* 140% */
         letter-spacing: 5px; 
     }
@@ -679,26 +714,24 @@ table,td {
     }
 }
 
-.cur_photo_container{
+.cur_ph_container{
     display:flex;
     width:100%;
     padding:0px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     margin-top:150px;
+    flex:auto;/*これが幅にくっつく設定*/
+    list-style: none;
+    padding:0px;
 }
 
-.cur_photo_container_item{
-        flex:auto;/*これが幅にくっつく設定*/
-        list-style: none;
-        padding:0px;
-    }
-    @media (max-width: 480px) {
-    .cur_photo_container{
+@media (max-width: 480px) {
+    .cur_ph_container{
         display:grid;
         grid-template-columns:1fr 1fr 1fr ;
         width:100%;
         padding:0px;
-        padding-bottom: 50px;
-        margin-top:150px;
+        margin-bottom: 23px;
+        margin-top:50px;
     }
 }
