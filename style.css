@@ -23,15 +23,14 @@ body{font-family: 'MonteCarlo', cursive;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background:#fff;
     text-align: center;
+    background:#fff;
 }
 
 .navi_menu{
     display:flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    color:#414141;
     font-family:游ゴシック,YuGothic,sans-serif,gothic;
 }
 
@@ -42,6 +41,7 @@ body{font-family: 'MonteCarlo', cursive;
 .navi_menu li{
     padding:10px;
     font-size: 16px;
+    align-items: center;
     font-family:游ゴシック,YuGothic,sans-serif,gothic;
 }
 
@@ -57,38 +57,45 @@ body{font-family: 'MonteCarlo', cursive;
 .header_navi_subpage{
     display:flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    justify-content: center;
     height: 229px;
     width:100vw;
     background-image: url(img/tolso_sub.jpg);
     background-size: cover;
     color:#fff;
 }
-/*いる？？
-.logo_subpage{
-    width:274px;
-}*/
+
+.mainlogo_subpage{
+    width:350px;
+    margin-bottom: -25px;
+    margin-right: 50px;;
+}
+
 
 .navi_menu_sub{
     color:#fff;
     display:flex;
+    flex-wrap: wrap;
+    align-items: center;
     font-family:游ゴシック,YuGothic,sans-serif,gothic;
 }
-.navi_menu_sub li{
-    color:#fff;
-    padding:10px;
-    font-size: 16px;
-    font-family:游ゴシック,YuGothic,sans-serif,gothic;
-}
+
 /*リンク訪問済みの色を変えない*/
 .a_navi_menu_sub{color:#fff;}
 .a_navi_menu_sub:visited{color:#fff;}
 
+.navi_menu_sub li{
+    color:#fff;
+    align-items: center;
+    padding:10px;
+    font-size: 16px;
+    font-family:游ゴシック,YuGothic,sans-serif,gothic;
+}
 
-/*TOPページバーガー*++++++++++++++++++++++++++++*/
-/*TOPburger*/
+/*TOPページ-ハンバーガー*++++++++++++++++++++++++++++*/
+/*TOP-burger*/
 .burger {
     width: 100vw;
     height: 50px;
@@ -114,7 +121,7 @@ body{font-family: 'MonteCarlo', cursive;
     .button_toiawase{line-height: 60px;}
 }
   
-/*TOP-menu*/
+/*TOP-menu-ハンバーガー*/
 .menu {
     display: flex;
     align-items: center;
@@ -147,16 +154,15 @@ body{font-family: 'MonteCarlo', cursive;
 .a_navi_menu{
     font-family:游ゴシック,YuGothic,sans-serif,gothic;
     line-height: 40px;
-    margin:20px;
 }
-/*TOPバーガー+++++++++++++++++++++++++++++*++++*/
+/*TOPバーガー終わり+++++++++++++++++++++++++++++*++++*/
 
 /*サブページバーガー*++++++++++++++++++++++++++++*/
-/*burger_sub*/
+/*burger_sub-ハンバーガー*/
 .burger_subpage {
     width: 100vw;
     height: 80px;
-    background-image:url(img/burger.svg),url(img/jochicajel_logo_sub.svg);
+    background-image:url(img/burger01.svg),url(img/jochicajel_logo_sub.svg);
     background-repeat: no-repeat;
     background-position: right,left;
     background-color: #fff;
@@ -168,19 +174,21 @@ body{font-family: 'MonteCarlo', cursive;
 }
  
 .burger_subpage.is-active {
-    background-image:url(img/close.svg),url(img/jochicajel_logo_sub.svg);
+    background-image:url(img/close02.svg),url(img/jochicajel_logo_sub.svg);
 }
 
 @media (max-width: 860px) {
     .burger_subpage{display:block;}
-    .menu_subpage{display:block;}
+    .menu_subpage{
+        display:block;
+        top:80px;}
     .header_navi_subpage{ display:none;}
     .button_toiawase{line-height: 60px;}
     .a_navi_menu:visited{color:#fff;}
-    .sub_body{margin-top: 120px;}
+    .sub_body{margin-top: 200px;}
 }
   
-/*menu sub*/
+/*menu sub-ハンバーガー*/
 .menu_subpage {
     display: flex;
     align-items: center;
