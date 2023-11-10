@@ -17,19 +17,12 @@ body{font-family: 'MonteCarlo', cursive;
 
 
 
-/*TOP naviまわり*/
+/*TOP naviまわり**************/
 .header_navi{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
-    background-image: url(img/tolso.jpg);
-    background-size: cover;
-    
-
-    /*height: 50px;
-    width:100vw;*/
     background:#fff;
     text-align: center;
 }
@@ -37,6 +30,7 @@ body{font-family: 'MonteCarlo', cursive;
 .navi_menu{
     display:flex;
     justify-content: center;
+    align-items: center;
     color:#414141;
     font-family:游ゴシック,YuGothic,sans-serif,gothic;
 }
@@ -51,10 +45,6 @@ body{font-family: 'MonteCarlo', cursive;
     font-family:游ゴシック,YuGothic,sans-serif,gothic;
 }
 
-.navi_menu a{
-    text-decoration: none;
-}
-
 /*問い合わせ*/
 .button_toiawase{
     background-color: #B5943E;
@@ -63,24 +53,24 @@ body{font-family: 'MonteCarlo', cursive;
     color:#fff;
     font-family:游ゴシック,YuGothic,sans-serif,gothic;
 }
-/*サブページ_navi*/
+/*サブページ_navi*************/
 .header_navi_subpage{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
+    text-align: center;
+    justify-content: center;
     height: 229px;
     width:100vw;
     background-image: url(img/tolso_sub.jpg);
     background-size: cover;
-    text-align: center;
-    padding:20px 20px 20px 40px;
     color:#fff;
 }
-いる？？
+/*いる？？
 .logo_subpage{
     width:274px;
-}
+}*/
+
 .navi_menu_sub{
     color:#fff;
     display:flex;
@@ -117,7 +107,7 @@ body{font-family: 'MonteCarlo', cursive;
     background-image:url(img/close.svg);
 }
 
-@media (max-width: 860px) {
+@media (max-width: 900px) {
     .burger{display:block;}
     .menu{display:block;}
     .header_navi{ display:none;}
@@ -171,7 +161,8 @@ body{font-family: 'MonteCarlo', cursive;
     background-position: right,left;
     background-color: #fff;
     cursor: pointer;
-    position: relative;
+    position: fixed;
+    top:0;
     z-index: 10;
     display:none;
 }
@@ -186,7 +177,7 @@ body{font-family: 'MonteCarlo', cursive;
     .header_navi_subpage{ display:none;}
     .button_toiawase{line-height: 60px;}
     .a_navi_menu:visited{color:#fff;}
-
+    .sub_body{margin-top: 120px;}
 }
   
 /*menu sub*/
@@ -236,8 +227,6 @@ body{font-family: 'MonteCarlo', cursive;
 .header_top{
     background-image: url(img/tolso.jpg);
     background-size:cover;
-    /*containは縦横比を保持して画像が全て表示される指定*/
-    background-repeat: no-repeat;
     background-position: center;
     height:auto;
     width:100vw;
