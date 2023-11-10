@@ -23,8 +23,13 @@ body{font-family: 'MonteCarlo', cursive;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width:100vw;
+
+    background-image: url(img/tolso_sub.jpg);
+    background-size: cover;
+    
+
+    /*height: 50px;
+    width:100vw;*/
     background:#fff;
     text-align: center;
 }
