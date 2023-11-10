@@ -401,6 +401,27 @@ body{
 .cur_link_btn { margin: 10px 0;}
 .cur_link_btn:hover { filter: brightness(0.5);}
 
+/*スクロールアップボタン(全ページ共通)------------------------------------*/    
+.up_btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    background-color: rgba(72, 72, 64, 0.5);
+    display: none;
+    text-align: center;
+    border-radius: 24px;
+  }
+  
+.up_btn::before {
+    content: url(img/top_btn.svg);
+  }
+  @media (max-width: 480px){
+    .up_btn{
+        display:block;
+    }
+  }
 
 /*footer(全ページ共通)------------------------------------*/    
 footer{
