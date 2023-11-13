@@ -383,8 +383,8 @@ body{
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
-    line-height: 25px;
-    letter-spacing: 3px;
+    line-height: 150%;
+    letter-spacing: 3;
   }
   .btn_2row{
     position:relative;
@@ -570,6 +570,48 @@ footer{
         line-height: 40px;
     }
 }
+/*cur もくじ*/
+.menu_section{
+    display:none;
+    justify-content: center;
+    width: 300px;
+    margin:60px auto 60px auto;
+    padding:20px;
+}
+.menu_section:visited{color:#fff;} /*リンク訪問済みの色を変えない*/
+.hr_menu{margin:15px 0;}
+.mokuji{
+    text-align:center;
+    letter-spacing: 5;
+}
+.menu_section_a{
+    color:#fff;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family:游ゴシック,YuGothic,sans-serif,gothic;
+    margin: 50px 0 50px 0em;
+}
+.menu_section li{
+    display:list-item;
+    list-style-type: circle;
+    margin:5px 20px 0 20px;
+}
+
+@media (max-width: 480px){
+    .menu_section{
+        display:block;
+    }
+}
+/*ジャンプしたときの固定ヘッダー分の高さを調整*/
+#about:before,#rittai:before,#rittaicontents:before,#housei:before,#price:before,#onetwotimes:before,#curriculum:before{
+    content: "";
+    display: block;
+    height: 100px; /* 調整したい高さ（固定ヘッダーの高さ） */
+    margin-top: -100px; /* heightと同じ分のネガティブマージン */
+    visibility: hidden;
+}
+
+    
 
 /*SUB cur meinコンテンツ*/
 
@@ -585,11 +627,11 @@ footer{
 
 h2{
     font-family: YuMincho;
-    font-size: 25px;
+    font-size: 27px;
     font-style: normal;
     font-weight: 500;
-    line-height: 35px; /* 140% */
-    letter-spacing: 5px; 
+    line-height: 140%;
+    letter-spacing: 7; 
 }
 
 p{
@@ -599,8 +641,8 @@ p{
     font-size: 17px;
     font-style: normal;
     font-weight: 500;
-    line-height: 40px;
-    letter-spacing: 0.5px; 
+    line-height: 180%;
+    letter-spacing: 0.5; 
 }
 
 .subpage_raw01{
@@ -682,7 +724,7 @@ table,td {
 .cur_thead{
     background-color: rgb(37,36,33);
 }
-
+/*カリキュラム*/
 .cur_hyou{
     list-style-type:decimal;
 
@@ -720,12 +762,13 @@ table,td {
     }
     h2{
         font-size: 22px;
-        line-height: 25px; /* 140% */
-        letter-spacing: 5px; 
+        line-height:  140%;
+        letter-spacing: 7; 
     }
     p{
-        line-height: 32px;
-        letter-spacing: 0.5px; 
+        font-size: 15px;
+        line-height: 180%;
+        letter-spacing: 0.5; 
     }
     .h2_margin{
         margin-top: 80px;
