@@ -9,9 +9,9 @@ li{
     list-style: none;
     text-decoration: none;
 }
-body{font-family: 'MonteCarlo', cursive;
-    font-family: 'Noto Serif JP', serif;
-    font-family:  '游明朝','Yu Mincho','Hiragino Mincho Pro',serif;}
+body{
+    font-family:'游ゴシック','Yugothic','Noto Serif JP',sans-serif,gothic;
+    font-family:'游明朝','Yu Mincho','Hiragino Mincho Pro',serif;}
 
 /*以上共通要素*/
 
@@ -260,6 +260,7 @@ body{font-family: 'MonteCarlo', cursive;
 .main_copy{
     font-family: YuMincho,serif;
     font-size: 24px;
+    color:#fff;
     font-style: normal;
     font-weight: 500;
     line-height: 40px;
@@ -400,10 +401,10 @@ body{
       gap:20px;
       margin:20px;
     }
-      .btn_2row{
-        position:none;
-        left:0%;
-      }
+    .btn_2row{
+      position:none;
+      left:0%;
+    }
   }
 
 .cur_link_btn { margin: 10px 0;}
@@ -462,7 +463,7 @@ footer{
 .footertext_big a{
     text-decoration: none;
     color: #FFF;
-    font-family: 游ゴシック,YuGothic,gothic;
+    font-family:游ゴシック,YuGothic,sans-serif,gothic;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -543,7 +544,7 @@ footer{
     letter-spacing: 6px;
     margin-bottom: 30px;
 }
-.subpage_title_copy{
+h1{
     color: #B5943E;
     text-align: center;
     font-family: YuMincho;
@@ -556,7 +557,7 @@ footer{
 
 @media (max-width: 480px){
     .subpage_title_eng{
-        width:250px;
+        height:57px;
         margin-top: 50px;
         margin-bottom: 25px;
     }
@@ -565,7 +566,7 @@ footer{
         letter-spacing: 6px;
         margin-bottom: 15px;
     }
-    .subpage_title_copy{
+    h1{
         font-size: 28px; 
         line-height: 40px;
     }
@@ -574,12 +575,14 @@ footer{
 .menu_section{
     display:none;
     justify-content: center;
-    width: 300px;
+    color:#fff;
+    width: 270px;
     margin:60px auto 60px auto;
-    padding:20px;
+    padding:30px 20 30 20;
+    border-top: 1px dotted #fff;
+    border-bottom: 1px dotted #fff;
 }
 .menu_section:visited{color:#fff;} /*リンク訪問済みの色を変えない*/
-.hr_menu{margin:15px 0;}
 .mokuji{
     text-align:center;
     letter-spacing: 5;
@@ -591,11 +594,21 @@ footer{
     font-family:游ゴシック,YuGothic,sans-serif,gothic;
     margin: 50px 0 50px 0em;
 }
+
 .menu_section li{
     display:list-item;
-    list-style-type: circle;
+    list-style-type: disc;
     margin:5px 20px 0 20px;
 }
+
+.menu_section_b a{
+    color:#fff;
+    margin: 15px 0 15px 2em;
+    font-family:游ゴシック,YuGothic,sans-serif,gothic;
+    font-size: 13px;
+    text-indent: 3em;
+}
+.menu_section_b:visited{color:#fff;} /*リンク訪問済みの色を変えない*/
 
 @media (max-width: 480px){
     .menu_section{
@@ -603,7 +616,7 @@ footer{
     }
 }
 /*ジャンプしたときの固定ヘッダー分の高さを調整*/
-#about:before,#rittai:before,#rittaicontents:before,#housei:before,#price:before,#onetwotimes:before,#curriculum:before{
+#about:before,#rittai:before,#housei:before,#price:before,#curriculum:before{
     content: "";
     display: block;
     height: 100px; /* 調整したい高さ（固定ヘッダーの高さ） */
@@ -712,7 +725,7 @@ p{
 }
 
         
-/*テーブル*/
+/*カリキュラム料金表*/
 table,td {
   border: 1px solid #fff;
   text-align: center;
@@ -801,3 +814,120 @@ table,td {
         margin-top:50px;
     }
 }
+/*curページ終わり************************************/
+
+/*orderページ************************************/
+.order_body{
+    background:#F1EEDB;
+    color:#35322C;
+}
+.order_main_catch{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    color:#B5943E
+}
+.order_grids{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:90px;
+    max-width: 900px;
+    margin:150 auto 150 auto;
+}
+.order_article01{
+    display:flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.order_article_photo{
+    width:190px;
+    margin-right:19px;
+}
+.order_article_right{
+    /*align-items:center;*/
+    /*display:grid;*/
+    width:45%;
+}
+.order_article_title{
+    color:#B5943E;
+    font-size: 25px;
+    border-bottom: 1px solid #B5943E;
+    padding:8px 0 8 0;
+    width:100%;
+}
+.order_article_text{
+    color:#414141;
+    padding:8px 0 8px 0;
+}
+.order_article_link{
+    color:#B5943E;
+    font-family:游ゴシック,YuGothic,sans-serif,gothic;
+}
+.order_article_link:visited{color:#B5943E;} /*リンク訪問済みの色を変えない*/
+.order_text{
+    color:#414141;
+    width:100%;
+}
+.kanariya{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:50px;
+    background: #fff;
+    color:#414141;
+    padding:20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50 auto 50 auto;
+}
+.kanariya_text{
+    color:#414141;
+    padding-left: 20px;
+}
+.kanariya_tell{
+    font-size: 24px;
+    color:#414141;
+    line-height: 1.2em;
+    padding: 5 0 0 20px;
+}
+.order_text02{margin-bottom: 100px;}
+
+.marie{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:50 auto 0 auto;
+}
+.p_marie{
+    color:#414141;
+    margin-top:30px;}
+
+@media (max-width: 480px){
+    .order_body{
+        margin-top:200px;
+    }
+    .order_grids{
+        gap: 30px;
+        margin:50 0 50 0;
+        justify-items: center;
+    }
+    .order_article01{
+        justify-items: center;
+    }
+    .order_article_right{width:100%;}
+    .order_article_photo{width:100%;}
+    .kanariya{
+        display:block;
+        width:100vw;
+        padding:20 10 10 10;
+    }
+    .order_article_title{font-size: 1.2em;}
+    .order_article_link{font-size: 0.7em;}
+    .kanariya_text,
+    .kanariya_tell{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}   
+/*orderページ終わり************************************/
