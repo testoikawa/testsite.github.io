@@ -905,6 +905,9 @@ table,td {
     width:230px;
     margin-bottom: 25px;
 }
+.his_article_ph_s2{
+    width:250;
+}
 /*生徒さんのリンク*/
 .history_link{
     color:#B5943E;
@@ -929,6 +932,7 @@ table,td {
         justify-items: center;
         margin:50 auto 50 auto;
     }
+    .his_article_ph_s2{width:100%}
  }
 /*historyページ終わり************************************/
 
