@@ -1,20 +1,15 @@
 a{text-decoration: none;}
-/*これでaタグに装飾を付けない（リンクのアンダーラインとか）*/
-
 *{ margin: 0px;}
-
 img{max-width:100%;} /*これで画像の大きさを親要素より大きくなることを防ぐ*/
-
 li{
     list-style: none;
     text-decoration: none;
 }
 body{
-    font-family:'游ゴシック','Yugothic','Noto Serif JP',sans-serif,gothic;
-    font-family:'游明朝','Yu Mincho','Hiragino Mincho Pro',serif;}
+    /*font-family:'游ゴシック','Yugothic','Noto Serif JP',sans-serif,gothic;*/
+    font-family:'游明朝','Yumincho','Yu Mincho','Hiragino Mincho Pro','Noto Serif JP',serif;}
 
-/*以上共通要素*/
-
+/*以上共通要素*****************/
 
 
 /*TOP naviまわり**************/
@@ -26,18 +21,15 @@ body{
     text-align: center;
     background:#fff;
 }
-
 .navi_menu{
     display:flex;
     flex-wrap: wrap;
     align-items: center;
     font-family:游ゴシック,YuGothic,sans-serif,gothic;
 }
-
 /*リンク訪問済みの色を変えない*/
 .a_navi_menu{color:#414141;}
 .a_navi_menu:visited{color:#414141;}
-
 .navi_menu li{
     padding:10px;
     font-size: 16px;
@@ -66,14 +58,11 @@ body{
     background-size: cover;
     color:#fff;
 }
-
 .mainlogo_subpage{
     width:350px;
     margin-bottom: -25px;
     margin-right: 50px;;
 }
-
-
 .navi_menu_sub{
     color:#fff;
     display:flex;
@@ -104,12 +93,11 @@ body{
     background-position: center;
     background-color: #fff;
     cursor: pointer;
-    position: relative;
-    z-index: 10;
+    position: fixed;/*1118*/
+    z-index: 1500;
     display:none;
     padding:20px;
 }
- 
 .burger.is-active {
     background-image:url(img/close.svg);
 }
@@ -141,7 +129,7 @@ body{
 }
 
 .navi_menu_burger{
-    z-index: 2;
+    z-index: 1500;
     padding:20px;
     color:#fff;
     gap:15px;
@@ -166,10 +154,9 @@ body{
     background-repeat: no-repeat;
     background-position: right,left;
     background-color: #fff;
-    cursor: pointer;
     position: fixed;
     top:0;
-    z-index: 10;
+    z-index: 1500;
     display:none;
 }
  
@@ -209,7 +196,7 @@ body{
 }
 
  .navi_menu_burger{
-    z-index: 2;
+    z-index: 1500;
     padding:20px;
     color:#fff;
     gap:15px;
@@ -228,7 +215,7 @@ body{
 }
 
 
-/*サブページバーガー終わり+++++++++++++++++++++++++++++++++*/
+/*サブページバーガー終わり++++++++++++++++++++++++++++++++++++*/
 
 
 /*TOP メイン要素*********************************************/
@@ -258,7 +245,7 @@ body{
 }
 
 .main_copy{
-    font-family: YuMincho,serif;
+    font-family: YuMincho,'Noto Serif JP',serif;
     font-size: 24px;
     color:#fff;
     font-style: normal;
@@ -272,7 +259,7 @@ body{
 .br_sp {display: none;}
 
 .main_subcopy{
-    font-family: YuMincho,serif;
+    font-family: YuMincho,'Noto Serif JP',serif;
     font-size: 18px;
     font-style: none;
     font-weight: 400;
@@ -299,13 +286,14 @@ body{
     }
 	.mainlogo{
         width: 300px;
+        margin-top:50px;
     }
-    
     .main_copy{
         font-size:18px;
         line-height: 30px;
         letter-spacing: 1.5px;
     }
+    
     /*スマホ用改行*/
     .br_sp {display: block;} 
     .main_subcopy{
@@ -390,7 +378,8 @@ body{
   .btn_2row{
     position:relative;
     right:-70%;
-    text-align : justify; 
+    text-align : justify;
+    z-index: auto;
   }
   
   @media (max-width: 480px){
@@ -404,6 +393,7 @@ body{
     .btn_2row{
       position:none;
       left:0%;
+      z-index: auto;
     }
   }
 
@@ -442,7 +432,6 @@ footer{
     width:100vw;
     background-color: rgb(37,36,33);
 }
-
 /*ゴールドバックのページ*/
 .footer_subpage_gold{
     width:100vw;
@@ -492,6 +481,21 @@ footer{
     color:rgba(116,117,85,1);
     padding:10px 16px 10px 16px;
 }
+.footer_logo_container{
+    display:flex;
+    margin:0 0 20 0;
+    align-items: center;
+}
+.footer_logo{
+    width:265px;
+    margin:0 40 0 0;
+}
+.footer_address{
+    color: #FFF;
+    font-family: 游ゴシック,YuGothic,gothic;
+    font-size: 15px;
+    line-height: 1.5em;;
+}
 .map{
     width:600px;
     height:270px;
@@ -508,12 +512,23 @@ footer{
         text-align: center;
         padding: 50px;
     }
+    .footer_logo_container{
+        display:grid;
+        justify-content: center;
+    }
+    .footer_logo{
+        margin: 0;
+    }
+    .footer_address{
+        text-align: center;
+        margin:20 0 0 0;
+    }
     .map{
         width:90vw;
         position: center;
     }
     .footer_rights{
-        padding-bottom:50px;
+        padding:20 0 40 0;
     }
 }
 
@@ -537,7 +552,7 @@ footer{
 .subpage_title_catch{
     color: #B5943E;
     text-align: center;
-    font-family: YuMincho;
+    font-family: YuMincho,'Noto Serif JP';
     font-size: 25px;
     font-style: normal;
     font-weight: 600;
@@ -547,7 +562,7 @@ footer{
 h1{
     color: #B5943E;
     text-align: center;
-    font-family: YuMincho;
+    font-family: YuMincho,'Noto Serif JP';
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -616,7 +631,7 @@ h1{
     }
 }
 /*ジャンプしたときの固定ヘッダー分の高さを調整*/
-#about:before,#rittai:before,#housei:before,#price:before,#curriculum:before{
+#about:before,#rittai:before,#housei:before,#price:before,#curriculum:before,#history01:before,#history02:before,#history03:before,#history04:before,#history05:before{
     content: "";
     display: block;
     height: 100px; /* 調整したい高さ（固定ヘッダーの高さ） */
@@ -631,15 +646,16 @@ h1{
 .subpage_main{
     display:flex;
     flex-wrap: wrap;
-    max-width:1000px;
+    max-width:1080px;/*1118*/
     margin:auto;
     padding-top: 100px;
     margin-bottom: 50px;
     color: #FFF;
+    padding:0 40 0 40;/*1118*/
 }
 
 h2{
-    font-family: YuMincho;
+    font-family: YuMincho,'Noto Serif JP',serif;
     font-size: 27px;
     font-style: normal;
     font-weight: 500;
@@ -650,7 +666,7 @@ h2{
 p{
     color: #FFF;
     text-align: justify;
-    font-family: YuMincho;
+    font-family: YuMincho,'Noto Serif JP',serif;
     font-size: 17px;
     font-style: normal;
     font-weight: 500;
@@ -663,7 +679,7 @@ p{
 }
 
 .subpage_main_catch{
-    margin-bottom: 30px;
+    margin: 80 0 30px 0;
     text-align: center;
 }
 
@@ -696,7 +712,6 @@ p{
     align-content: center;
     line-height: 20px;
 }
-
 
 .cur_row_contents{
     display:grid;
@@ -740,7 +755,6 @@ table,td {
 /*カリキュラム*/
 .cur_hyou{
     list-style-type:decimal;
-
 }
 .cur_hyou{
     text-indent:0.25em;
@@ -755,13 +769,12 @@ table,td {
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap:74px;
-
 }
 
 @media (max-width: 480px) {
     .subpage_main{
         margin:60px 30px 150px 30px;
-        padding-top: 0px;
+        padding: 0px;/**1118　padding-top0のみだった*/
         margin-bottom: 50px;
     }
     .cur_12photos{
@@ -799,7 +812,7 @@ table,td {
     padding:0px;
     margin-bottom: 50px;
     margin-top:150px;
-    flex:auto;/*これが幅にくっつく設定*/
+    flex:auto;/*幅にくっつく設定*/
     list-style: none;
     padding:0px;
 }
@@ -816,7 +829,169 @@ table,td {
 }
 /*curページ終わり************************************/
 
-/*orderページ************************************/
+
+/*historyページ************************************/
+.history_body{
+    background:#f3f3f1;/*linear-gradient(180deg,#f3f3f1, #fff 2%, #fff);*/
+    color:#35322C;
+}
+.history_contents{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1080px;
+    padding:0 40 0 40;
+    margin:50 auto 50 auto;
+}
+
+/*history もくじ******/
+.his_menu_section{
+    display:none;
+    justify-content: center;
+    color:#35322C;
+    margin:60px auto 0px auto;
+    padding:30px 5 30 5;
+    border-top: 1px dotted #35322C;
+    border-bottom: 1px dotted #35322C;
+}
+.his_menu_section:visited{color:#35322C;} /*リンク訪問済みの色を変えない*/
+.his_mokuji{
+    text-align:center;
+    letter-spacing: 5;
+    color:#35322C;
+}
+.his_menu_section_a{
+    color:#35322C;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family:游ゴシック,YuGothic,sans-serif,gothic;
+    margin: 50px 0 50px 0em;
+}
+
+.his_menu_section li{
+    display:list-item;
+    list-style-type: disc;
+    margin:5px 20px 0 20px;
+}
+
+@media (max-width: 480px){
+    .his_menu_section{
+        display:block;
+    }
+}
+
+.history_article_title{
+    font-size: 20px;
+    color:#B5943E;
+    margin:3em 0 1em 0;
+}
+.history_article_text{
+    color:#35322C;
+}
+.history_photo_container{
+    display:flex;
+    max-width: 600px;
+    margin:50 auto 50 auto;
+    gap: 25px;
+}
+.his_ph{
+    display:block;
+    width:230px;
+}
+.his_article_ph{
+    width:345px;
+}
+.his_article_ph_s{
+    width:230px;
+    margin-bottom: 25px;
+}
+/*生徒さんのリンク*/
+.history_link{
+    color:#B5943E;
+    border-bottom:dashed 1px #B5943E;
+}
+.history_link:visited{color:#B5943E;} /*リンク訪問済みの色を変えない*/
+.history_figcaption{
+    color:#35322C;
+    font-family:游ゴシック,YuGothic,sans-serif,gothic;
+    font-size: 14px;
+}
+
+@media (max-width: 480px){
+    .history_body{
+        margin-top:200px;
+    }
+    .history_contents{
+        padding:0;
+    }
+    .history_photo_container{
+        display:grid;
+        justify-items: center;
+        margin:50 auto 50 auto;
+    }
+ }
+/*historyページ終わり************************************/
+
+/*profileページ*****************************************/
+
+.profile_ph_container{
+    display:grid;
+    justify-content: center;
+    margin:80 auto 0 auto;
+
+}
+.profile_ph{
+    width:172px;
+}
+.pro_name01{
+    font-size: 14px;
+    letter-spacing: 5;
+    text-align: center;
+    padding:10 0 0 0;
+}
+.pro_name{
+    font-size: 20px;
+    letter-spacing: 3;
+    text-align: center;
+}
+.pro_btn_to_order{
+    background-color: #B5943E;
+    border-radius: 10px;
+    padding:8px;
+    color:#fff;
+    font-family:游ゴシック,YuGothic,sans-serif,gothic;
+    text-align: center;
+    margin: 40 0 100 0;
+}
+.pro_btn_to_order a:visited{color:#fff;}
+
+/*profileページ終わり************************************/
+.pro_history_box{
+    border:none;
+}
+.pro_history {
+    border-right: 1px solid #fff;
+    border-left:none;
+    border-top: none;
+    border-bottom:none;
+    text-align: left;
+    vertical-align: top;
+    padding:10 40 10 0px;
+    border-collapse: collapse;
+    width:25%;
+    table-layout:fixed;
+  }
+.pro_history_r{
+    border:none;
+    text-align: justify;
+    padding:10 10 10 50px;
+}
+.btn_to_order{
+
+}
+
+
+/*orderページ******************************************/
 .order_body{
     background:#F1EEDB;
     color:#35322C;
@@ -826,15 +1001,19 @@ table,td {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    margin: 0 auto 0 auto;
-    color:#B5943E
+    margin: 50 auto 0 auto;
+    color:#B5943E;
+    letter-spacing: 3px; 
 }
+.wedding_link{ border-bottom:dashed 1px #B5943E;}
+.wedding_link:visited{color:#B5943E;}
 .order_grids{
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap:90px;
-    max-width: 900px;
+    max-width: 980px;/*1118 900px*/
     margin:150 auto 150 auto;
+    padding:0;/*1118*/
 }
 .order_article01{
     display:flex;
@@ -871,19 +1050,20 @@ table,td {
     width:100%;
 }
 .kanariya{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap:50px;
+    display:flex;
+   /* grid-template-columns: 1fr 1fr;
+    gap:50px;*/
     background: #fff;
     color:#414141;
     padding:20px;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
     margin: 50 auto 50 auto;
 }
 .kanariya_text{
     color:#414141;
     padding-left: 20px;
+    min-width:400px;
 }
 .kanariya_tell{
     font-size: 24px;
@@ -891,8 +1071,10 @@ table,td {
     line-height: 1.2em;
     padding: 5 0 0 20px;
 }
+.kanariya_map{
+    /*margin-right:0;
+    width:400px;}*/}
 .order_text02{margin-bottom: 100px;}
-
 .marie{
     display:flex;
     flex-wrap: wrap;
@@ -903,7 +1085,7 @@ table,td {
     color:#414141;
     margin-top:30px;}
 
-@media (max-width: 480px){
+@media (max-width: 900px){
     .order_body{
         margin-top:200px;
     }
@@ -918,9 +1100,11 @@ table,td {
     .order_article_right{width:100%;}
     .order_article_photo{width:100%;}
     .kanariya{
-        display:block;
-        width:100vw;
-        padding:20 10 10 10;
+        display:flex;
+        flex-wrap: wrap;
+        width:100%;
+        padding:20 20 20 20;
+        justify-content: center;
     }
     .order_article_title{font-size: 1.2em;}
     .order_article_link{font-size: 0.7em;}
@@ -929,5 +1113,52 @@ table,td {
         text-align: center;
         margin-bottom: 15px;
     }
-}   
+    .kanariya_map{
+        display:flex;
+        width:100%;
+        justify-content: center;
+    }  
+ }
+
 /*orderページ終わり************************************/
+
+/*orderサブページ*************************************/
+.order_sub_no{
+    border:#B5943E solid 1px;
+    padding:px;
+    font-size: 20px;
+    width: 255px;
+    margin:50 auto 0 auto;
+}
+.slider{
+    width:100vw;
+    height:auto;
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    /*display:flex;*/
+    margin:50 0 50 0 ;
+}
+.order_sub_grids{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:74px;
+    max-width: 1000px;
+    margin:50 auto 0 auto;
+}
+.order_sub_text{
+    display:flex;
+    justify-content: center;
+    max-width:1000px;
+    margin:0 auto 25 auto;
+}
+.order_sub_text_contents{color:#414141;}
+.order_article_text{line-height: 1.2em;}
+@media (max-width: 480px){
+    .order_sub_grids{
+    grid-template-columns: 1fr 1fr;
+    gap:30px;
+}
+    .slider{
+    grid-template-columns: repeat(3, 1fr);  
+    }
+}
