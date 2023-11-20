@@ -1024,6 +1024,7 @@ table,td {
     margin: 60 auto 0 auto;
 }
 .wedding_link{ border-bottom:dashed 1px #B5943E;}
+.order_main_catch:visited{ #B5943E;}
 .wedding_link:visited{color:#B5943E;}
 .order_grids{
     display:grid;
