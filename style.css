@@ -629,7 +629,7 @@ h1{
     }
 }
 /*ジャンプしたときの固定ヘッダー分の高さを調整*/
-#about:before,#rittai:before,#housei:before,#price:before,#curriculum:before,#history01:before,#history02:before,#history03:before,#history04:before,#history05:before#order001:before,#marie:before{
+#about:before,#rittai:before,#housei:before,#price:before,#curriculum:before,#history01:before,#history02:before,#history03:before,#history04:before,#history05:before,#order001:before,#marie:before{
     content: "";
     display: block;
     height: 100px; /* 調整したい高さ（固定ヘッダーの高さ） */
