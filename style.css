@@ -121,15 +121,14 @@ body{
     display: none;
     text-align: center;
     margin: 0 0 60px 0;
-    color:#fff
+    color:#fff;
 }
-  
+
 .menu.is-active {
     display: flex;
 }
 
 .navi_menu_burger{
-    z-index: 1500;
     padding:20px;
     color:#fff;
     gap:15px;
@@ -172,7 +171,7 @@ body{
     .header_navi_subpage{ display:none;}
     .button_toiawase{line-height: 60px;}
     .a_navi_menu:visited{color:#fff;}
-    .sub_body{margin-top: 200px;}
+    .sub_body{margin-top: 130px;}
 }
   
 /*menu sub-ハンバーガー*/
@@ -196,14 +195,13 @@ body{
 }
 
  .navi_menu_burger{
-    z-index: 1500;
     padding:20px;
     color:#fff;
     gap:15px;
 }
 
 .navi_menu_burger a{
-  text-align: center;
+    text-align: center;
     color:#fff;
     margin:20px;
 }
@@ -506,7 +504,7 @@ footer{
     text-align: center;
     padding: 80px 0 80px 0 ;
 }
-@media (max-width: 480px) {
+@media (max-width: 900px) {
     .footer_navi{
         justify-content: center;
         text-align: center;
@@ -547,23 +545,23 @@ footer{
 }
 .subpage_title_eng{
     display:block;
-    margin: 150px auto 45px auto;
+    margin: 80px auto 20px auto;
 }
 .subpage_title_catch{
     color: #B5943E;
     text-align: center;
     font-family: YuMincho,'Noto Serif JP';
-    font-size: 25px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     letter-spacing: 6px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 h1{
     color: #B5943E;
     text-align: center;
     font-family: YuMincho,'Noto Serif JP';
-    font-size: 40px;
+    font-size: 33px;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 8px;
@@ -573,7 +571,7 @@ h1{
 @media (max-width: 480px){
     .subpage_title_eng{
         height:57px;
-        margin-top: 50px;
+        margin-top: 20px;
         margin-bottom: 25px;
     }
     .subpage_title_catch{
@@ -631,7 +629,7 @@ h1{
     }
 }
 /*ジャンプしたときの固定ヘッダー分の高さを調整*/
-#about:before,#rittai:before,#housei:before,#price:before,#curriculum:before,#history01:before,#history02:before,#history03:before,#history04:before,#history05:before{
+#about:before,#rittai:before,#housei:before,#price:before,#curriculum:before,#history01:before,#history02:before,#history03:before,#history04:before,#history05:before#order001:before,#marie:before{
     content: "";
     display: block;
     height: 100px; /* 調整したい高さ（固定ヘッダーの高さ） */
@@ -648,7 +646,7 @@ h1{
     flex-wrap: wrap;
     max-width:1080px;/*1118*/
     margin:auto;
-    padding-top: 100px;
+    padding-top: 50px;
     margin-bottom: 50px;
     color: #FFF;
     padding:0 40 0 40;/*1118*/
@@ -773,7 +771,7 @@ table,td {
 
 @media (max-width: 480px) {
     .subpage_main{
-        margin:60px 30px 150px 30px;
+        margin:0px 30px 150px 30px;
         padding: 0px;/**1118　padding-top0のみだった*/
         margin-bottom: 50px;
     }
@@ -841,10 +839,11 @@ table,td {
     justify-content: center;
     max-width: 1080px;
     padding:0 40 0 40;
-    margin:50 auto 50 auto;
+    margin:0 auto 0 auto;
 }
 
 /*history もくじ******/
+
 .his_menu_section{
     display:none;
     justify-content: center;
@@ -879,11 +878,24 @@ table,td {
         display:block;
     }
 }
+/*もくじおわり++++++++*/
+.his_main_catch{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    color:#B5943E;
+    letter-spacing: 5px;
+    font-size: 23px;
+    margin-top: 80px;
+}
 
 .history_article_title{
     font-size: 20px;
     color:#B5943E;
     margin:3em 0 1em 0;
+    letter-spacing: 3;;
 }
 .history_article_text{
     color:#35322C;
@@ -922,7 +934,7 @@ table,td {
 
 @media (max-width: 480px){
     .history_body{
-        margin-top:200px;
+        margin-top:130px;
     }
     .history_contents{
         padding:0;
@@ -1001,13 +1013,15 @@ table,td {
     color:#35322C;
 }
 .order_main_catch{
-    display:flex;
+    color:#B5943E;
+    letter-spacing: 3px; 
+}
+.order_catch_container{
+    display:block;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    margin: 50 auto 0 auto;
-    color:#B5943E;
-    letter-spacing: 3px; 
+    margin: 60 auto 0 auto;
 }
 .wedding_link{ border-bottom:dashed 1px #B5943E;}
 .wedding_link:visited{color:#B5943E;}
@@ -1016,7 +1030,7 @@ table,td {
     grid-template-columns: 1fr 1fr;
     gap:90px;
     max-width: 980px;/*1118 900px*/
-    margin:150 auto 150 auto;
+    margin:50 auto 80 auto;
     padding:0;/*1118*/
 }
 .order_article01{
@@ -1040,9 +1054,12 @@ table,td {
     padding:8px 0 8 0;
     width:100%;
 }
+.order_article_title:visited{
+    color:#B5943E;
+}
 .order_article_text{
     color:#414141;
-    padding:8px 0 8px 0;
+    padding:18px 0 13px 0;
 }
 .order_article_link{
     color:#B5943E;
@@ -1091,7 +1108,7 @@ table,td {
 
 @media (max-width: 900px){
     .order_body{
-        margin-top:200px;
+        margin-top:130px;
     }
     .order_grids{
         gap: 30px;
