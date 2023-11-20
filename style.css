@@ -1063,6 +1063,7 @@ table,td {
 }
 .order_article_link{
     color:#B5943E;
+    font-size: 13px;
     font-family:游ゴシック,YuGothic,sans-serif,gothic;
 }
 .order_article_link:visited{color:#B5943E;} /*リンク訪問済みの色を変えない*/
