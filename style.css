@@ -995,7 +995,7 @@ table,td {
     border-radius: 10px;
     padding:8px;
     color:#fff;
-    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
+    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
     text-align: center;
     margin: 40 0 100 0;
 }
@@ -1032,6 +1032,18 @@ table,td {
     background:#F1EEDB;
     color:#35322C;
 }
+
+.order_main{
+   /*display:flex;
+    flex-wrap: wrap;*1121*/
+    max-width:1080px;/*1118*/
+    margin:auto;
+    /*padding-top: 50px;1121*/
+    margin-bottom: 50px;
+    color: #FFF;
+    /*padding:0 40 0 40;/*1118+1121*/
+}
+
 .order_main_catch{
     color:#B5943E;
     letter-spacing: 3px; 
@@ -1049,9 +1061,9 @@ table,td {
 .order_grids{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    gap:90px;
+    gap:80px;
     max-width: 980px;/*1118 900px*/
-    margin: 1/*50px auto 80px auto*/;
+    margin: 60px auto 60px auto;
     padding:0;/*1118*/
 }
 .order_article01{
