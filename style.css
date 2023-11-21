@@ -6,7 +6,7 @@ li{
     text-decoration: none;
 }
 body{
-    /*font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Noto Sans JP","Zen Kaku Gothic New",sans-serif;*/
+    /*font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;*/
     font-family:"游明朝","Yumincho","Yu Mincho","Noto Serif JP","Hiragino Mincho Pro",serif;
     text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -28,7 +28,7 @@ body{
     display:flex;
     flex-wrap: wrap;
     align-items: center;
-    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Noto Sans JP","Zen Kaku Gothic New",sans-serif;
+    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
 }
 /*リンク訪問済みの色を変えない*/
 .a_navi_menu{color:#414141;}
@@ -37,7 +37,7 @@ body{
     padding:10px;
     font-size: 16px;
     align-items: center;
-    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Noto Sans JP","Zen Kaku Gothic New",sans-serif;
+    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
 }
 
 /*問い合わせ*/
@@ -46,7 +46,7 @@ body{
     border-radius: 10px;
     padding:8px;
     color:#fff;
-    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Noto Sans JP","Zen Kaku Gothic New",sans-serif;
+    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
 }
 /*サブページ_navi*************/
 .header_navi_subpage{
@@ -71,7 +71,7 @@ body{
     display:flex;
     flex-wrap: wrap;
     align-items: center;
-    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Noto Sans JP","Zen Kaku Gothic New",sans-serif;
+    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
 }
 
 /*リンク訪問済みの色を変えない*/
@@ -83,7 +83,7 @@ body{
     align-items: center;
     padding:10px;
     font-size: 16px;
-    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Noto Sans JP","Zen Kaku Gothic New",sans-serif;
+    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
 }
 
 /*TOPページ-ハンバーガー*++++++++++++++++++++++++++++*/
@@ -142,7 +142,7 @@ body{
     margin:20px;
 }
 .a_navi_menu{
-    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Noto Sans JP","Zen Kaku Gothic New",sans-serif;
+    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
     line-height: 40px;
 }
 /*TOPバーガー終わり+++++++++++++++++++++++++++++*++++*/
@@ -210,7 +210,7 @@ body{
 }
 
 .a_navi_menu02{
-    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Noto Sans JP","Zen Kaku Gothic New",sans-serif;
+    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
     line-height: 40px;
     margin:20px;
 }
@@ -271,7 +271,7 @@ body{
 
 .button_toiawase2{
     background-color: #fff;
-    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Noto Sans JP","Zen Kaku Gothic New",sans-serif;
+    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
     font-size: 16px;
     border-radius: 10px;
     width:260px;
@@ -369,7 +369,7 @@ body{
     margin-bottom: 50px;
     color: #FFF;
     text-align: center;
-    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Noto Sans JP","Zen Kaku Gothic New",sans-serif;
+    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
@@ -453,7 +453,7 @@ footer{
 .footertext_big a{
     text-decoration: none;
     color: #FFF;
-    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Noto Sans JP","Zen Kaku Gothic New",sans-serif;
+    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -464,7 +464,7 @@ footer{
 .footertext_small a{
     text-decoration: none;
     color: #FFF;
-    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Noto Sans JP","Zen Kaku Gothic New",sans-serif;
+    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -481,7 +481,7 @@ footer{
     width:300px;
     color:#5b564c;
     padding:10px 16px 10px 16px;
-    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Noto Sans JP","Zen Kaku Gothic New",sans-serif;
+    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
 }
 .footer_logo_container{
     display:flex;
@@ -494,7 +494,7 @@ footer{
 }
 .footer_address{
     color: #FFF;
-    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Noto Sans JP","Zen Kaku Gothic New",sans-serif;
+    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
     font-size: 15px;
     line-height: 1.5em;;
 }
@@ -623,7 +623,7 @@ h1{
     color:#fff;
     font-size: 14px;
     line-height: 1.5;
-    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Noto Sans JP","Zen Kaku Gothic New",sans-serif;
+    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
     margin: 50px 0 50px 0em;
 }
 
@@ -636,7 +636,7 @@ h1{
 .menu_section_b a{
     color:#fff;
     margin: 15px 0 15px 2em;
-    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Noto Sans JP","Zen Kaku Gothic New",sans-serif;
+    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
     font-size: 13px;
     text-indent: 3em;
 }
@@ -883,7 +883,7 @@ table,td {
     color:#35322C;
     font-size: 14px;
     line-height: 1.5;
-    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Noto Sans JP","Zen Kaku Gothic New",sans-serif;
+    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
     margin: 50px 0 50px 0em;
 }
 
@@ -948,7 +948,7 @@ table,td {
 .history_link:visited{color:#B5943E;} /*リンク訪問済みの色を変えない*/
 .history_figcaption{
     color:#35322C;
-    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Noto Sans JP","Zen Kaku Gothic New",sans-serif;
+    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
     font-size: 14px;
 }
 
@@ -995,7 +995,7 @@ table,td {
     border-radius: 10px;
     padding:8px;
     color:#fff;
-    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Noto Sans JP","Zen Kaku Gothic New",sans-serif;
+    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
     text-align: center;
     margin: 40 0 100 0;
 }
@@ -1051,7 +1051,7 @@ table,td {
     grid-template-columns: 1fr 1fr;
     gap:90px;
     max-width: 980px;/*1118 900px*/
-    margin:50 auto 80 auto;
+    margin: 1/*50px auto 80px auto*/;
     padding:0;/*1118*/
 }
 .order_article01{
@@ -1085,7 +1085,7 @@ table,td {
 .order_article_link{
     color:#B5943E;
     font-size: 13px;
-    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Noto Sans JP","Zen Kaku Gothic New",sans-serif;
+    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
 }
 .order_article_link:visited{color:#B5943E;} /*リンク訪問済みの色を変えない*/
 .order_text{
