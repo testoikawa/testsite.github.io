@@ -1013,17 +1013,17 @@ padding-left:7.5px;}
 
 .his_menu_section{
     display:none;
-    color:#35322C;
+    color:#5e5e5e;
     margin:40px auto 0px auto;
     padding:30px 5 30 5;
-    border-top: 1px dotted #35322C;
-    border-bottom: 1px dotted #35322C;
+    border-top: 1px dotted #5e5e5e;
+    border-bottom: 1px dotted #5e5e5e;
 }
-.his_menu_section:visited{color:#35322C;} /*リンク訪問済みの色を変えない*/
+.his_menu_section:visited{color:#5e5e5e;} /*リンク訪問済みの色を変えない*/
 .his_mokuji{
     text-align:center;
     letter-spacing: 5;
-    color:#35322C;
+    color:#5e5e5e;
     font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
 }
 .his_menu_section_div{
@@ -1032,7 +1032,7 @@ padding-left:7.5px;}
 }
 .his_menu_section_a{
     display:flex;
-    color:#35322C;
+    color:#5e5e5e;
     font-size: 14px;
     line-height: 1.5;
     font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
