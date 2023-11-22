@@ -659,7 +659,7 @@ h1{
 
 @media (max-width: 480px){
     .cur_menu_section{
-        display:grid;
+        display:flex;
         /*grid-template-columns: 33.3% 33.3% 33.3%;*/
         grid-template-columns: 1fr 1fr 1fr;
         flex-wrap: wrap;
