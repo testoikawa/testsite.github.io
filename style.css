@@ -174,7 +174,7 @@ body{
     .header_navi_subpage{ display:none;}
     .button_toiawase{line-height: 60px;}
     .a_navi_menu:visited{color:#fff;}
-    .sub_body{margin-top: 110px;}
+    .sub_body{margin-top: 95px;}
 }
   
 /*menu sub-ハンバーガー*/
@@ -282,25 +282,44 @@ body{
 
 @media (max-width: 480px) {
     /*header部分*/
+    .header_top{
+        padding:10px;
+    }
     .header_copy{
-        padding:0 20px 0 20px;
+        padding:0 10px 0 10px;
     }
 	.mainlogo{
-        width: 300px;
-        margin-top:50px;
+        width: 220px;
+        margin-top:60px;
     }
     .main_copy{
-        font-size:18px;
-        line-height: 30px;
-        letter-spacing: 1.5px;
+        font-size:12.5px;
+        line-height: 20px;
+        letter-spacing: 0;
+        margin:10 0 8 0px;
+    }
+    .button_toiawase2{
+        display:flex;
+        font-size: 11px;
+        border-radius: 6px;
+        width:150px;
+        height:25px;
+        align-items: center;
+        text-align:center;
+        justify-content: center;
+        color: #B5943E;
+        text-decoration-line: none;
+        margin:0 auto 10px auto;
+        padding:0px;
     }
     
     /*スマホ用改行*/
     .br_sp {display: block;} 
     .main_subcopy{
-        font-size:14px;
-        line-height: 25px;
+        font-size:12px;
+        line-height: 16px;
         letter-spacing: 0px;
+        margin-bottom:10px;
     }
     .br_browser{
         display:none;
@@ -349,13 +368,15 @@ body{
 @media (max-width: 480px){
     .movie_part{
         display:grid;
-        grid-template-columns: 1fr 1fr 190px 1fr 1fr;
+        grid-template-columns: 1fr 1fr 150px 1fr 1fr;
         gap: 15px;
     }
     .movie_copy01,.movie_copy02{
-        font-size: 17px;
+        font-size: 13px;
         letter-spacing:7px;
     }
+    .mov_adjust01{margin:0 20 0 0}
+    .mov_adjust02{margin:20 0 0 20}
 }
 
 /*TOP 各ページリンク*/
@@ -390,6 +411,10 @@ body{
       grid-template-rows: auto;
       gap:20px;
       margin:20px;
+      font-family:"游明朝","Yumincho","Yu Mincho","Noto Serif JP","Hiragino Mincho Pro",serif;
+      font-size: 13px;
+      line-height: 1.3em;
+      letter-spacing: 1;
     }
     .btn_2row{
       position:none;
@@ -575,17 +600,18 @@ h1{
 @media (max-width: 480px){
     .subpage_title_eng{
         height:45px;
-        margin-top: 5px;
-        margin-bottom: 10px;
+        margin-top: 0px;
+        margin-bottom: 7px;
     }
     .subpage_title_catch{
         font-size: 14px;
         letter-spacing: 6px;
-        margin-bottom: 10px;
+        margin-bottom: 7px;
     }
     h1{
-        font-size: 22px; 
-        line-height: 28px;
+        font-size: 15px; 
+        line-height: 19px;
+        letter-spacing: 2px;
     }
     /*修正前
        .subpage_title_eng{
@@ -604,7 +630,7 @@ h1{
     }*/
 }
 /*cur もくじ*/
-.menu_section{
+/*.menu_section{
     display:none;
     justify-content: center;
     color:#fff;
@@ -613,9 +639,37 @@ h1{
     padding:30px 20 30 20;
     border-top: 1px dotted #fff;
     border-bottom: 1px dotted #fff;
+}*/
+.cur_menu_section{
+    display:none;
+    /*justify-content: space-around;*/
+    width: 100%;
+    /*margin:0 15 0 15;*/
 }
-.menu_section:visited{color:#fff;} /*リンク訪問済みの色を変えない*/
-.mokuji{
+.menu_btn{
+    display:flex;
+    color:#fff;
+    background-color: #726b5f;
+    padding:5px;
+    font-size: 13px;
+    text-align:center;
+    justify-content: center;
+}
+.menu_btn:visited{color:#fff;} /*リンク訪問済みの色を変えない*/
+
+@media (max-width: 480px){
+    .cur_menu_section{
+        display:grid;
+        /*grid-template-columns: 33.3% 33.3% 33.3%;*/
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        flex-wrap: wrap;
+        margin:20 0 0 0 ;
+        gap:15px;
+    }
+}
+
+/*.mokuji{
     text-align:center;
     letter-spacing: 5;
 }
@@ -642,12 +696,8 @@ h1{
 }
 .menu_section_b:visited{color:#fff;} /*リンク訪問済みの色を変えない*/
 
-@media (max-width: 480px){
-    .menu_section{
-        display:block;
-        margin-top:30;
-    }
-}
+
+
 /*ジャンプしたときの固定ヘッダー分の高さを調整*/
 #about:before,#rittai:before,#housei:before,#price:before,#curriculum:before,#history01:before,#history02:before,#history03:before,#history04:before,#history05:before{
     content: "";
@@ -736,16 +786,21 @@ p{
     grid-template-columns: 1fr 1fr;
     gap:74px;
 }
+.cur_row_contents_cur{
+    display:grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap:50px;
+}
 
 .cur_corse{
     margin-top:20px;
 }
 
-.cur_hyou{
+/*.cur_hyou{
     list-style-type:decimal;
     text-indent:0.25em;
     margin-left:3em;
-}
+}／ダブり？1122*/
 
 .cur_hyo_font{
     font-size: 20px;
@@ -773,57 +828,22 @@ table,td {
 /*カリキュラム*/
 .cur_hyou{
     list-style-type:decimal;
+    list-style-position:inside;/*1122*/
+    text-indent:-1.5em;
+    margin-left:2em;
 }
-.cur_hyou{
-    text-indent:0.25em;
-    margin-left:3em;
-}
-
+.cur_hyou_indent{
+padding-left:7.5px;}
+.unseen0{color:#35322C;}
 .cur_hyou_container{
     margin-bottom:40px;
 }
-
 .cur_hyo_grid{
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap:74px;
 }
-
-@media (max-width: 480px) {
-    .subpage_main{
-        margin:0px 30px 150px 30px;
-        padding: 0px;/**1118　padding-top0のみだった*/
-        margin-bottom: 50px;
-    }
-    .cur_12photos{
-        grid-template-columns: repeat(2,1fr);
-        gap:10px;
-        margin-bottom: 90px;
-    }
-    .cur_row_contents{
-        grid-template-columns: 1fr;
-        gap:25px;
-    }
-    h2{
-        font-size: 22px;
-        line-height:  140%;
-        letter-spacing: 7; 
-    }
-    p{
-        font-size: 15px;
-        line-height: 180%;
-        letter-spacing: 0.5; 
-    }
-    .h2_margin{
-        margin-top: 80px;
-        margin-bottom:20px;
-    }
-    .hr_margin{
-        margin-bottom:20px;
-        width:100%;
-    }
-}
-
+.jikan_ph{display:none}
 .cur_ph_container{
     display:flex;
     width:100%;
@@ -835,7 +855,93 @@ table,td {
     padding:0px;
 }
 
+
 @media (max-width: 480px) {
+    .subpage_main{
+        margin:0px 15px 150px 15px;
+        padding: 0px;/**1118　padding-top0のみだった*/
+        margin-bottom: 50px;
+    }
+    .cur_12photos{
+        /*grid-template-columns: repeat(2,1fr);*/
+        gap:10px;
+        margin-bottom: 30px;
+    }
+    .cur_row_contents{
+        grid-template-columns: 1fr;
+        gap:25px;
+    }
+    h2{
+        font-size: 22px;
+        line-height:  140%;
+        letter-spacing: 7; 
+    }
+    p{
+        font-size: 13px;
+        line-height: 1.6em;
+        letter-spacing: 0; 
+    }
+    .h2_margin{
+        margin-top: 45px;
+        margin-bottom:20px;
+    }
+    .hr_margin{
+        margin-bottom:20px;
+        width:100%;
+    }
+    .subpage_main_catch_about{
+        font-size: 19px;
+        letter-spacing: 1;
+        margin:50 0 15 0;
+    }
+    .subpage_main_copy{
+        margin-bottom:30;
+    }
+    .housei_ph{display:none;}
+    .jikan_ph{
+        display:block;
+    }
+    .cur_hyou{
+        font-size: 12px;
+        line-height: 1.25em;
+        letter-spacing: 0;
+    }
+    .cur_hyo_font{
+        font-size: 13px;
+        color:#B5943E;
+        letter-spacing: 1px; 
+    }
+    .cur_hyo_font02{
+        font-size: 16px;
+        letter-spacing: 1px; 
+    }
+    .cur_hyo_font_margin{
+        margin-top: 10px;
+    }
+    .cur_row_contents_cur{
+        display:grid;
+        grid-template-columns: 1fr 40%;
+        gap:4px;
+        margin:0 0 0 0;
+    }
+    .ryokin_photo{
+        padding-right:0;
+    }
+    /*/.cur_hyo_grid_ph_container{
+        display:flex;
+    }*/
+    .cur_row_contents_ph{
+        display:grid;
+        grid-template-columns: 1fr 45%;
+        gap:18px;
+    }
+    .cur_ph_container{
+        margin:-50 0 30 0;
+    }
+}
+
+
+/*@media (max-width: 480px) {
     .cur_ph_container{
         display:grid;
         grid-template-columns:1fr 1fr 1fr ;
@@ -844,7 +950,9 @@ table,td {
         margin-bottom: 23px;
         margin-top:50px;
     }
-}
+}1122*/
+
+
 /*curページ終わり************************************/
 
 
@@ -866,7 +974,6 @@ table,td {
 
 .his_menu_section{
     display:none;
-    justify-content: center;
     color:#35322C;
     margin:40px auto 0px auto;
     padding:30px 5 30 5;
@@ -878,20 +985,28 @@ table,td {
     text-align:center;
     letter-spacing: 5;
     color:#35322C;
+    font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
+}
+.his_menu_section_div{
+    justify-content: center;
+    text-align: center;
 }
 .his_menu_section_a{
+    display:flex;
     color:#35322C;
     font-size: 14px;
     line-height: 1.5;
     font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
-    margin: 50px 0 50px 0em;
+    text-align:center;
+    justify-content: center;
+    margin: 5px auto 5px auto;
 }
 
-.his_menu_section li{
+/*.his_menu_section li{
     display:list-item;
     list-style-type: disc;
     margin:5px 20px 0 20px;
-}
+}*/
 
 @media (max-width: 480px){
     .his_menu_section{
@@ -951,20 +1066,34 @@ table,td {
     font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;
     font-size: 14px;
 }
+/*.his_cap01{display:none}1122つけてはずす*/
 
 @media (max-width: 480px){
     .history_body{
-        margin-top:130px;
+        margin-top:100px;
     }
     .history_contents{
         padding:0;
     }
+    .his_main_catch{
+        font-size: 20px;
+        margin-top:60;
+    }
+    .history_article_title{
+        font-size: 18px;
+        margin:3em 0 0.5em 0;
+        letter-spacing: 3;
+    }
+    
     .history_photo_container{
         display:grid;
         justify-items: center;
-        margin:50 auto 50 auto;
+        margin:50 auto 0 auto;
     }
     .his_article_ph_s2{width:100%}
+    /*.his_cap01{display:block}
+    .his_cap02{display:none}
+    .his_ph_hide{display:none}*/
  }
 /*historyページ終わり************************************/
 
@@ -1001,6 +1130,11 @@ table,td {
 }
 .pro_btn_to_order a:visited{color:#fff;}
 
+@media (max-width: 480px){
+    .profile_ph{
+    width:120px;
+}}
+
 /*profileページ終わり************************************/
 .pro_history_box{
     border:none;
@@ -1012,7 +1146,7 @@ table,td {
     border-bottom:none;
     text-align: left;
     vertical-align: top;
-    padding:10 40 10 0px;
+    padding:10 50 10 0px;
     border-collapse: collapse;
     width:25%;
     table-layout:fixed;
@@ -1020,11 +1154,12 @@ table,td {
 .pro_history_r{
     border:none;
     text-align: justify;
-    padding:10 10 10 50px;
+    padding:10 10 10 30px;
 }
-.btn_to_order{
-
-}
+@media (max-width: 480px){
+    .pro_history_r,.pro_history{
+    font-size: 15px;
+}}
 
 
 /*orderページ******************************************/
@@ -1039,7 +1174,8 @@ table,td {
     max-width:1080px;/*1118*/
     margin:auto;
     /*padding-top: 50px;1121*/
-    margin-bottom: 50px;
+    margin:0px 15px 50px 15px;
+/* margin-bottom: 50px;*/
     color: #FFF;
     /*padding:0 40 0 40;/*1118+1121*/
 }
@@ -1142,7 +1278,7 @@ table,td {
 
 @media (max-width: 900px){
     .order_body{
-        margin-top:110px;
+        margin-top:100px;
     }
     .order_catch_container{
         margin-top: 25px;
@@ -1151,7 +1287,7 @@ table,td {
         font-size: 18px;
     }
     .order_grids{
-        gap: 30px;
+        gap: 20px;
         margin:35 0 50 0;
         justify-items: center;
     }
