@@ -655,17 +655,57 @@ h1{
     text-align:center;
     justify-content: center;
 }
+/*疑似ボタンないと上のリンクがきかない*/
+.menu_btn2{
+    display:flex;
+    color:#35322C;
+    background-color:#35322C;
+    padding:1px;
+    font-size: 1px;
+}
+.cur_menu_section02{
+    display:none;}
+
 .menu_btn:visited{color:#fff;} /*リンク訪問済みの色を変えない*/
 
 @media (max-width: 480px){
     .cur_menu_section{
-        display:flex;
+        display:grid;
         /*grid-template-columns: 33.3% 33.3% 33.3%;*/
         grid-template-columns: 1fr 1fr 1fr;
+        width:100%;
+        flex-wrap: wrap;
+        margin:10 0 0 0 ;
+        gap:10px;
+    }
+    .cur_menu_section02{
+        display:flex;
+        width:100%;
+        flex-wrap: wrap;
+        margin:10 0 0 0 ;
+        gap:10px;
+    }
+    .cur_btn_margintop{
+        margin:20 0 0 0;
+    }
+    /*.cur_menu_section a{
+        display:flex;/*リンク範囲をボタン要素にも*/
+       /* box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        text-align: center;}*/
+        
+    /*.menu_btn{
+        width:28vw;
+    }*/
+    /* .cur_menu_section{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         flex-wrap: wrap;
         margin:20 0 0 0 ;
         gap:15px;
-    }
+    }*/
 }
 
 /*.mokuji{
@@ -891,7 +931,7 @@ padding-left:7.5px;}
     .subpage_main_catch_about{
         font-size: 19px;
         letter-spacing: 1;
-        margin:50 0 15 0;
+        margin:10 0 15 0;
     }
     .subpage_main_copy{
         margin-bottom:30;
