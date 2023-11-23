@@ -1166,15 +1166,19 @@ padding-left:7.5px;}
 }
 
 .order_main{
-   /*display:flex;
-    flex-wrap: wrap;*1121*/
-    max-width:1080px;/*1118*/
-    margin:auto;
-    /*padding-top: 50px;1121*/
-    margin:0px 15px 50px 15px;
-/* margin-bottom: 50px;*/
+    display:flex;
+    text-align: center;
+    justify-content: center;
+}
+.order_container{
+    display:inline-block;
+    /*flex-wrap: wrap;*/
+    max-width:1080px;
+    margin:0px 20 50px 20;
     color: #FFF;
-    /*padding:0 40 0 40;/*1118+1121*/
+    padding:0;
+    text-align: center;
+    justify-content: center;
 }
 
 .order_main_catch{
@@ -1195,7 +1199,7 @@ padding-left:7.5px;}
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap:80px;
-    max-width: 980px;/*1118 900px*/
+    max-width: 900px;/*1118 900px*/
     margin: 60px auto 60px auto;
     padding:0;/*1118*/
 }
@@ -1206,7 +1210,7 @@ padding-left:7.5px;}
 }
 .order_article_photo{
     width:190px;
-    margin-right:19px;
+    margin:0 19px 8 0;
 }
 .order_article_right{
     /*align-items:center;*/
@@ -1215,9 +1219,9 @@ padding-left:7.5px;}
 }
 .order_article_title{
     color:#B5943E;
-    font-size: 25px;
+    font-size: 23px;
     border-bottom: 1px solid #B5943E;
-    padding:8px 0 8 0;
+    padding:0 0 8 0;
     width:100%;
 }
 .order_article_title:visited{
@@ -1283,6 +1287,13 @@ padding-left:7.5px;}
     .order_main_catch{
         font-size: 18px;
     }
+    /*ma-jinn SP1123*/
+    .order_main{
+   display:flex;
+    flex-wrap: wrap;
+    margin:0px 15px 50px 15px;
+}
+
     .order_grids{
         gap: 20px;
         margin:35 0 50 0;
@@ -1300,7 +1311,7 @@ padding-left:7.5px;}
         padding:20 20 20 20;
         justify-content: center;
     }
-    .order_article_title{font-size: 1.2em;}
+    .order_article_title{font-size: 1em;}
     .order_article_link{font-size: 0.7em;}
     .kanariya_text,
     .kanariya_tell{
@@ -1338,6 +1349,7 @@ padding-left:7.5px;}
     gap:74px;
     max-width: 1000px;
     margin:50 auto 0 auto;
+    z-index:100;
 }
 .order_sub_text{
     display:flex;
@@ -1347,6 +1359,7 @@ padding-left:7.5px;}
 }
 .order_sub_text_contents{color:#414141;}
 .order_article_text{line-height: 1.2em;}
+
 @media (max-width: 480px){
     .order_sub_grids{
     grid-template-columns: 1fr 1fr;
