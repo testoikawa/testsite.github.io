@@ -267,6 +267,7 @@ body{
     line-height: 35px;
     letter-spacing: 3px;
     margin-bottom: 31px;
+    text-align:center;
 }
 
 .button_toiawase2{
@@ -283,10 +284,10 @@ body{
 @media (max-width: 480px) {
     /*header部分*/
     .header_top{
-        padding:10px;
+        padding:5px;
     }
     .header_copy{
-        padding:0 10px 0 10px;
+        padding:0 5px 0 5px;
     }
 	.mainlogo{
         width: 220px;
@@ -294,9 +295,26 @@ body{
     }
     .main_copy{
         font-size:12.5px;
-        line-height: 20px;
-        letter-spacing: 0;
+        line-height: 17px;
+        letter-spacing: 0.2;
         margin:10 0 8 0px;
+    }
+    .main_subcopy{
+        font-size:11px;
+        line-height: 14px;
+        letter-spacing: 0.5px;
+        margin-bottom:10px;
+        text-align:justify;
+
+    }
+    /*スマホで句読点を隠す*/
+    .sp_hide{
+        display:none;
+    }
+    /*スマホ用改行*/
+    .br_sp {display: block;} 
+    .br_browser{
+        display:none;
     }
     .button_toiawase2{
         display:flex;
@@ -311,18 +329,6 @@ body{
         text-decoration-line: none;
         margin:0 auto 10px auto;
         padding:0px;
-    }
-    
-    /*スマホ用改行*/
-    .br_sp {display: block;} 
-    .main_subcopy{
-        font-size:12px;
-        line-height: 16px;
-        letter-spacing: 0px;
-        margin-bottom:10px;
-    }
-    .br_browser{
-        display:none;
     }
 }
 
@@ -368,15 +374,15 @@ body{
 @media (max-width: 480px){
     .movie_part{
         display:grid;
-        grid-template-columns: 1fr 1fr 150px 1fr 1fr;
+        grid-template-columns: 1fr 1fr 140px 1fr 1fr;
         gap: 15px;
     }
     .movie_copy01,.movie_copy02{
-        font-size: 13px;
-        letter-spacing:7px;
+        font-size: 12.5px;
+        letter-spacing:5px;
     }
-    .mov_adjust01{margin:0 20 0 0}
-    .mov_adjust02{margin:20 0 0 20}
+    .mov_adjust01{margin:0 14 0 0}
+    .mov_adjust02{margin:23 0 0 14}
 }
 
 /*TOP 各ページリンク*/
@@ -401,7 +407,6 @@ body{
     position:relative;
     right:-70%;
     text-align : justify;
-    z-index: auto;
   }
   
   @media (max-width: 480px){
@@ -419,7 +424,7 @@ body{
     .btn_2row{
       position:none;
       left:0%;
-      z-index: auto;
+      z-index: -1;
     }
   }
 
@@ -612,8 +617,9 @@ h1{
         font-size: 15px; 
         line-height: 19px;
         letter-spacing: 2px;
-    }
-    /*修正前
+    }   
+}
+/*修正前
        .subpage_title_eng{
         height:57px;
         margin-top: 20px;
@@ -628,84 +634,36 @@ h1{
         font-size: 28px; 
         line-height: 40px;
     }*/
-}
+
 /*cur もくじ*/
-/*.menu_section{
-    display:none;
-    justify-content: center;
-    color:#fff;
-    width: 270px;
-    margin:60px auto 60px auto;
-    padding:30px 20 30 20;
-    border-top: 1px dotted #fff;
-    border-bottom: 1px dotted #fff;
-}*/
+
 .cur_menu_section{
     display:none;
     /*justify-content: space-around;*/
     width: 100%;
+    z-index: 100;
     /*margin:0 15 0 15;*/
 }
 .menu_btn{
-    display:flex;
+    display:block;
     color:#fff;
     background-color: #726b5f;
-    padding:5px;
+    padding:2px;
     font-size: 13px;
     text-align:center;
     justify-content: center;
 }
-/*疑似ボタンないと上のリンクがきかない*/
-.menu_btn2{
-    display:flex;
-    color:#35322C;
-    background-color:#35322C;
-    padding:1px;
-    font-size: 1px;
-}
-.cur_menu_section02{
-    display:none;}
-
 .menu_btn:visited{color:#fff;} /*リンク訪問済みの色を変えない*/
 
 @media (max-width: 480px){
     .cur_menu_section{
         display:grid;
-        /*grid-template-columns: 33.3% 33.3% 33.3%;*/
         grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: auto;
         width:100%;
-        flex-wrap: wrap;
-        margin:10 0 0 0 ;
+        margin:30 0 20 0;
         gap:10px;
     }
-    .cur_menu_section02{
-        display:flex;
-        width:100%;
-        flex-wrap: wrap;
-        margin:10 0 0 0 ;
-        gap:10px;
-    }
-    .cur_btn_margintop{
-        margin:20 0 0 0;
-    }
-    /*.cur_menu_section a{
-        display:flex;/*リンク範囲をボタン要素にも*/
-       /* box-sizing: border-box;
-        justify-content: center;
-        align-items: center;
-        text-align: center;}*/
-        
-    /*.menu_btn{
-        width:28vw;
-    }*/
-    /* .cur_menu_section{
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        flex-wrap: wrap;
-        margin:20 0 0 0 ;
-        gap:15px;
-    }*/
 }
 
 /*.mokuji{
