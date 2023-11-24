@@ -654,6 +654,9 @@ h1{
     justify-content: center;
 }
 .menu_btn:visited{color:#fff;} /*リンク訪問済みの色を変えない*/
+/*.cur_raw01{
+    z-index:-2;
+}*/
 
 @media (max-width: 480px){
     .cur_menu_section{
@@ -858,6 +861,8 @@ padding-left:7.5px;}
         margin:0px 15px 150px 15px;
         padding: 0px;/**1118　padding-top0のみだった*/
         margin-bottom: 50px;
+        display:inline-block;
+        z-index:-1;
     }
     .cur_12photos{
         /*grid-template-columns: repeat(2,1fr);*/
@@ -1087,7 +1092,9 @@ padding-left:7.5px;}
         justify-items: center;
         margin:50 auto 0 auto;
     }
-    .his_article_ph_s2{width:100%}
+    .his_article_ph_s2{
+        width:200px;
+    }
     /*.his_cap01{display:block}
     .his_cap02{display:none}
     .his_ph_hide{display:none}*/
@@ -1130,9 +1137,13 @@ padding-left:7.5px;}
 @media (max-width: 480px){
     .profile_ph{
     width:120px;
-}}
+    }
+    .pro_btn_to_order{
+        margin: 40 0 30 0;
+    }
+}
 
-/*profileページ終わり************************************/
+/*profile　経歴************************************/
 .pro_history_box{
     border:none;
 }
@@ -1153,10 +1164,39 @@ padding-left:7.5px;}
     text-align: justify;
     padding:10 10 10 30px;
 }
+/**/
+.pro_sp_hide{display:block;}
+.pro_sp_show{display:none;}
+/**/
+
 @media (max-width: 480px){
+    /*.pro_history_box{
+        width:30%;
+    }*/
     .pro_history_r,.pro_history{
-    font-size: 15px;
-}}
+    font-size: 13px;
+    }
+    .pro_history {
+        padding:7 10 7 0px;
+        width:18%;
+    }
+    .pro_history_r{
+        padding:7 7 7 18px;
+    }
+    /**/
+    .pro_sp_hide{display:none;}
+    .pro_sp_show{
+        display:block;
+    }
+    /*.pro_sp_show_ph{
+        width:25%;
+    }*/
+    .pro_row_contents{
+        grid-template-columns: 0.5fr 0.5fr;
+        gap:7px;
+    }
+}
+/*profileページ終わり************************************/
 
 
 /*orderページ******************************************/
