@@ -291,21 +291,21 @@ body{
     }
 	.mainlogo{
         width: 220px;
-        margin-top:60px;
+        margin-top:70px;
     }
     .main_copy{
-        font-size:12.5px;
-        line-height: 17px;
-        letter-spacing: 0.2;
-        margin:10 0 8 0px;
+        font-weight:800;
+        font-size:13px;
+        line-height: 19px;
+        letter-spacing: 0.5;
+        margin:15 0 8 0px;
     }
     .main_subcopy{
         font-size:11px;
-        line-height: 14px;
-        letter-spacing: 0.5px;
+        line-height: 18px;
+        letter-spacing: 0.7px;
         margin-bottom:10px;
         text-align:justify;
-
     }
     /*スマホで句読点を隠す*/
     .sp_hide{
@@ -327,7 +327,7 @@ body{
         justify-content: center;
         color: #B5943E;
         text-decoration-line: none;
-        margin:0 auto 10px auto;
+        margin:5 auto 24px auto;
         padding:0px;
     }
 }
