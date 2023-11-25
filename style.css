@@ -298,14 +298,14 @@ body{
         font-size:13px;
         line-height: 19px;
         letter-spacing: 0.5;
-        margin:15 0 8 0px;
+        margin:15 0 12 0px;
     }
     .main_subcopy{
         font-size:11px;
         line-height: 18px;
         letter-spacing: 0.7px;
         margin-bottom:10px;
-        text-align:justify;
+        text-align:center;
     }
     /*スマホで句読点を隠す*/
     .sp_hide{
@@ -327,7 +327,7 @@ body{
         justify-content: center;
         color: #B5943E;
         text-decoration-line: none;
-        margin:5 auto 24px auto;
+        margin:10 auto 24px auto;
         padding:0px;
     }
 }
