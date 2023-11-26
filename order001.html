@@ -9,7 +9,11 @@
     <meta name="description" content="立体裁断の技術を身に着けたい方・自分のお店やブランドを作りたい方・パターン作りのプロを目指したい方・プロの縫製を身につけたい方・洋裁を習いたかったけれど機会がなかったという未経験の方まで。基本からやさしく丁寧に指導する、立体裁断教室・縫製教室です。">
     <!--ブラウザのデフォルトcssをリセット-->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="style.css">
+     <!--スライダー用css-->
+     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+     <!--css-->
+     <link rel="stylesheet" href="style.css">
     <!--googlefonts↓↓-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,14 +67,16 @@
         <h1 class="order_sub_no">Order no.001</h1>
     </div>
 
-    <ul class="slider">
-        <li><img src="img/order00101s.png"></li>
-        <li><img src="img/order00102s.png"></li>
-        <li><img src="img/order00103s.png"></li>
-        <li><img src="img/order00104s.png"></li>
-        <li><img src="img/order00105s.png"></li>
-        <li><img src="img/order00106s.png"></li>
-    </ul>
+    <div class="slider_container">
+        <div class="order_slide">
+            <div><a href="img/order00101s.png" target="_blank"><img src="img/order00101s.png"></a></div>
+            <div><a href="img/order00102s.png" target="_blank"><img src="img/order00102s.png"></a></div>
+            <div><a href="img/order00103s.png" target="_blank"><img src="img/order00103s.png"></a></div>
+            <div><a href="img/order00104s.png" target="_blank"><img src="img/order00104s.png"></a></div>
+            <div><a href="img/order00105s.png" target="_blank"><img src="img/order00105s.png"></a></div>
+            <div><a href="img/order00106s.png" target="_blank"><img src="img/order00106s.png"></a></div>
+          </div>
+    </div>
 
 <main class="subpage_main"> 
 
@@ -149,12 +155,26 @@
 <!--スクロールアップボタン-->
 <a class="up_btn" href="#"></a>
 
+ <!--Jquery-->
+ <script type="text/javascript" src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+ 
+<!--スライダー-->
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.order_slide').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots:true
+    });
+        });
+</script>
+<!--スライダー-->
+
  <!--ハンバーガーメニュ-Jquery-->
- <script
- src="https://code.jquery.com/jquery-3.6.0.min.js"
- integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
- crossorigin="anonymous"
-></script>
 <script>
  $(".burger_subpage").click(function () {
    $(".burger_subpage").toggleClass("is-active");
