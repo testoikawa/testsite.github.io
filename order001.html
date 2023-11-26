@@ -168,9 +168,20 @@
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,
-            dots:true
+            arrows:false,
+            dots:true,
+            adaptiveHeight:true,
+            responsive: [
+      {
+        breakpoint: 400, // 399px以下のサイズに適用
+        settings: {
+        slidesToShow: 3,
+        },
+      },
+    ],
+  });
     });
-        });
+
 </script>
 <!--スライダー-->
 
