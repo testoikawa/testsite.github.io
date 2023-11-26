@@ -1380,15 +1380,18 @@ padding-left:7.5px;}
     padding:px;
     font-size: 20px;
     width: 255px;
-    margin:50 auto 0 auto;
-}
+    margin:50 auto 50 auto;
+}/*
 .slider{
     width:100vw;
     height:auto;
     display:grid;
     grid-template-columns: repeat(6, 1fr);
     /*display:flex;*/
-    margin:50 0 50 0 ;
+    /*margin:50 0 0 0 ;
+}*/
+.order_sub_text{
+    margin:30 0 0 0;
 }
 .order_sub_grids{
     display:grid;
@@ -1402,7 +1405,7 @@ padding-left:7.5px;}
     display:flex;
     justify-content: center;
     max-width:1000px;
-    margin:0 auto 25 auto;
+    margin:60 auto 25 auto;
 }
 .order_sub_text_contents{color:#414141;}
 .order_article_text{line-height: 1.2em;}
@@ -1415,4 +1418,11 @@ padding-left:7.5px;}
     .slider{
     grid-template-columns: repeat(3, 1fr);  
     }
+}
+/**スライダー*/
+
+.order_slide{
+    height: 400px;
+    z-index: 10;
+    width:100vw;
 }
