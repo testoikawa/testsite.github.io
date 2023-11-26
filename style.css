@@ -1423,6 +1423,10 @@ padding-left:7.5px;}
     }
 }
 /**スライダー*/
+.slider_container{
+    height:420px;
+}
+
 
 .order_slide{
     height: 400px;
