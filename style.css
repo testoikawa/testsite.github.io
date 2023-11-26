@@ -1418,11 +1418,22 @@ padding-left:7.5px;}
     .slider{
     grid-template-columns: repeat(3, 1fr);  
     }
+    .order_sub_text{
+        margin:-130 0 0 0;
+    }
 }
 /**スライダー*/
 
 .order_slide{
     height: 400px;
-    z-index: 10;
+    z-index: 1;
     width:100vw;
+}
+.slick-dots{
+	bottom: 40px!important;
+}
+@media (max-width: 480px){
+    .slick-dots{
+        bottom: 150px!important;
+    }
 }
