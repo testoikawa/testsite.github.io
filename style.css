@@ -1,5 +1,6 @@
 a{text-decoration: none;}
-*{ margin: 0px;}
+*{ margin: 0px;
+ 	maipulation:auto;}
 img{max-width:100%;} /*これで画像の大きさを親要素より大きくなることを防ぐ*/
 li{
     list-style: none;
