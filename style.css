@@ -1,10 +1,7 @@
-a{text-decoration: none;}
-*{ margin: 0px;}
+*{margin: 0px;
+  text-decoration: none;}
 img{max-width:100%;} /*これで画像の大きさを親要素より大きくなることを防ぐ*/
-li{
-    list-style: none;
-    text-decoration: none;
-}
+li{list-style: none;}
 body{
     /*font-family:"游ゴシック体","Yugothic","Yu Gothic Medium", "游ゴシック Medium","Zen Kaku Gothic Antique","Noto Sans JP",sans-serif;*/
     font-family:"游明朝","Yumincho","Yu Mincho","Noto Serif JP","Hiragino Mincho Pro",serif;
