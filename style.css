@@ -1403,6 +1403,13 @@ padding-left:7.5px;}
     width: 255px;
     margin:50 auto 50 auto;
 }
+.order_kakudai{
+    color:#414141;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    margin:20 auto 80 auto;
+}
 
 .order_sub_no_student{
     border:#B5943E solid 1px;
@@ -1466,7 +1473,10 @@ padding-left:7.5px;}
     width: 100px;
     margin:20 auto 50 auto;
 }
-
+.order_kakudai{
+    font-size: 12px;
+    margin:0 auto 20 auto;
+}
 .order_sub_no_student{
     font-size: 10px;
     width: 200;
